@@ -3,42 +3,44 @@ body{
 }
 
 h1{
-    background-color: #000;
+    background-color:aqua;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
+
+
 h2{
-    background-color: #000;
+    background-color: #8dae5;
     color: #fff;
     text-align: left;
 }
 
 h3{
-    background-color: #000;
+    background-color: #8dae5;
     color: #fff;
     text-align: left;
 }
 h4{
-    background-color: #000;
+    background-color: #8dae5;
     color: #fff;
     text-align: left;
 }
 
 h5{
-    background-color: #000;
-    color: #fff;
+    background-color:rgb(128, 218, 231);
+    color:#fff;
     text-align: left;
 }
 
 h6{
-    background-color: #000;
+    background-color:rgb(137, 214, 224);
     color: #fff;
     text-align: left;
 }
 
 p{
-    background-color: #000;
+    background-color: #8cdbe7;
     color: #fff;
     text-align: left;
 }
