@@ -12,3 +12,29 @@
 .underline {
   text-decoration: underline;
 }
+
+.table {
+  border-collapse: collapse;
+  width: 25%;
+  text-align: left;
+  margin: 0;
+
+}
+
+.table th, .table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-right {
+  border-collapse: collapse;
+  width: 25%;
+  text-align: left;
+  float: right;
+}
+.table-right th, .table-right td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}

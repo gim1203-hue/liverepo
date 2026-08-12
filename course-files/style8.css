@@ -1,0 +1,91 @@
+/* ===================== BASE ===================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===================== SECTION CONTAINERS ===================== */
+.section {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* ===================== HEADER ===================== */
+#header {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#header h1 {
+  margin: 0 0 8px 0;
+}
+
+/* ===================== HEADINGS ===================== */
+h2 {
+  color: #1d4ed8;
+  border-bottom: 2px solid #1d4ed8;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* ===================== SKILLS LIST ===================== */
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list li {
+  background-color: #e0ecff;
+  color: #1d4ed8;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #b3cdfd;
+}
+
+.skill-list li:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+/* ===================== CONTACT SECTION ===================== */
+#contact {
+  text-align: center;
+}
+
+/* ===================== BUTTON ===================== */
+.btn {
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #15803d;
+}
