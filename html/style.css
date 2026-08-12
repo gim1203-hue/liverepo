@@ -59,18 +59,18 @@ article {
 
 /* ===================== LINKS ===================== */
 a {
-  color: #0284c7;
+  color: #e90b0b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #f97316;
+  color: #4d9b62;
   text-decoration: underline;
 }
 
 /* ===================== LISTS ===================== */
 ul, ol {
-  color: #333;
+  color: #4b6c52;
   margin-bottom: 20px;
   padding-left: 30px;
 }
