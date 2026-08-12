@@ -91,7 +91,7 @@ img {
 table {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 th {
@@ -99,7 +99,7 @@ th {
   color: #fff;
   border: 1px solid #999;
   padding: 8px 12px;
-  text-align: left;
+  text-align: center;
 }
 
 td {
@@ -109,7 +109,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #f0f4f8;
+  background-color: #e9bb17;
 }
 
 /* ===================== FORMS ===================== */

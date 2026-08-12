@@ -13,28 +13,71 @@
   text-decoration: underline;
 }
 
-.table {
+.t1 {
+  background-color: #09c8e2;
+  color: #5813cf;
+  border: 10px dotted;
+  width: 150%;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.t2 {
+  background-color: #bad6da;
+  color: #cf8d13;
+  border: 10px solid;
+  width: 20%;
+  text-align: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+.t3 {
+  background-color: #2128b5;
+  color: #94cf13;
   border-collapse: collapse;
-  width: 25%;
+  width: 100%;
   text-align: left;
-  margin: 0;
-
+  margin-left:0px;
+  margin-right: 150px;
+  padding: 0px;
 }
 
-.table th, .table td {
-  border: 1px solid black;
-  padding: 8px;
+table {
+  background-color: #17e867;
+  color: #96e70a;
+  border-collapse: collapse;
+  width: 75%;
+  text-align: left;
+  margin: 1px;
+
+}
+table th, table td {
+  border: 1px solid #b91414;
   text-align: left;
 }
-
 .table-right {
+  color: #5813cf;
   border-collapse: collapse;
-  width: 25%;
+  width: 75%;
   text-align: left;
+  margin: 19px;
   float: right;
+  padding: 10px;
 }
 .table-right th, .table-right td {
-  border: 1px solid black;
-  padding: 8px;
+  border: 1px solid rgb(223, 31, 31);
   text-align: left;
+}
+
+form {
+  background-color: #e2c809;
+  color: #0a13cf;
+  border: 10px dotted;
+  width: %;
+  text-align: left;
+  margin: px;
+  padding: 0px;
 }

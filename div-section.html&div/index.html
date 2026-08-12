@@ -193,7 +193,7 @@
   <section class="table-section">
     <h1>Table Section</h1>
     <p>This section contains a table with sample data.</p>
-<table border="10" cellpadding="6" cellspacing="4">
+<table class="t1" border="10" cellpadding="6" cellspacing="4">
     <tr>
         <th>name</th>
         <th>age</th>
@@ -220,10 +220,9 @@
 </table>
 </section>
 
-<section class="table-section">
-    <h1>Table Section</h1>
-    <p>This section contains a table with sample data.</p>
-<table border="10" cellpadding="6" cellspacing="4">
+
+  
+<table class="t2" border="10" cellpadding="6" cellspacing="4">
     <tr>
         <th>name</th>
         <th>age</th>
@@ -248,12 +247,11 @@
         <td>chicago</td>
     </tr>
 </table>
-</section>
 
 <section class="table-section">
     <h1>Table Section</h1>
     <p>This section contains a table with sample data.</p>
-<table border="10" cellpadding="06" cellspacing="4">
+<table class="t3" border="10" cellpadding="06" cellspacing="4">
     <tr>
         <th>name</th>
         <th>age</th>
@@ -283,7 +281,19 @@
 <br><br>
 
 <div class="heading-row">
-  <section>
+  
+    
+    <form action="/submit" method="post" >
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+  
+
+  <section class="form-section">
     <h1>Form Section</h1>
     <p>This section contains a form with input fields.</p>
     <form action="/submit" method="post">
@@ -295,9 +305,8 @@
     </form>
   </section>
 
-  <section>
-    <h1>Form Section</h1>
-    <p>This section contains a form with input fields.</p>
+  
+    
     <form action="/submit" method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br><br>
@@ -305,23 +314,11 @@
         <input type="email" id="email" name="email"><br><br>
         <input type="submit" value="Submit">
     </form>
-  </section>
-
-  <section>
-    <h1>Form Section</h1>
-    <p>This section contains a form with input fields.</p>
-    <form action="/submit" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
-    </form>
-  </section>
+  
 </div>
 
 <br><br>
-<section class="table-section">  
+ 
     <table class="table-right" border="10" cellpadding="6" cellspacing="4">
         <tr>
             <th>name</th>
@@ -347,9 +344,9 @@
             <td>chicago</td>
         </tr>
     </table>
-    </section>
-    <section class="table-section">
-    <table class="table-left" border="10" cellpadding="6" cellspacing="4">
+    
+
+    <table border="10" cellpadding="6" cellspacing="4">
         <tr>
             <th>name</th>
             <th>age</th>
@@ -374,11 +371,9 @@
             <td>chicago</td>
         </tr>
     </table>
-    </section><br><br>
-
     
-      <section class="table-section">
-      <table class="table-right" border="10" cellpadding="6" cellspacing="4">
+
+    <table class="table-right" border="10" cellpadding="6" cellspacing="4">
             <tr>
                 <th>name</th>
                 <th>age</th>
@@ -403,11 +398,9 @@
                 <td>chicago</td>
             </tr>
         </table>
-    </div>
+    
 
-    <div class="heading-row">
-      <section class="table-section">
-      <table class="table-left" border="10" cellpadding="6" cellspacing="4">
+      <table border="10" cellpadding="6" cellspacing="4">
             <tr>
                 <th>name</th>
                 <th>age</th>
@@ -433,11 +426,7 @@
             </tr>
         </table>
       </section>
-    </div>
-  
-  
-    <div>
-    <section class="table-section">
+    
     <table class="table-right" border="10" cellpadding="6" cellspacing="4">
         <tr>
             <th>name</th>
@@ -463,11 +452,10 @@
             <td>chicago</td>
         </tr>
     </table>
-    </section>
-  </div>
-  <div class="heading-row">
+     
+  
     <section class="table-section">
-    <table class="table-left" border="10" cellpadding="6" cellspacing="4">
+    <table border="10" cellpadding="6" cellspacing="4">
         <tr>
             <th>name</th>
             <th>age</th>
@@ -494,7 +482,6 @@
     </table>
     </section>
 
-  </div>
 
 
 </body>
