@@ -10,3 +10,75 @@ learn how to link a css file to html stucture
     <link rel="stylesheet" href="style5.css"> <========ADD LINK (CSS FILE) HERE UNDER THE TITLE>
 
 </head>
+
+-----------------------------
+css view
+body {
+    background-color: #88dae5;
+}
+
+h1 {
+    background-color: aqua;
+    color: #fff;
+    text-align: left;
+}
+
+h2 {
+    background-color: #88dae5;
+    color: #fff;
+    text-align: left;
+}
+
+h3 {
+    background-color: #88dae5;
+    color: #fff;
+    text-align: left;
+}
+
+h4 {
+    background-color: #88dae5;
+    color: #fff;
+    text-align: left;
+}
+
+h5 {
+    background-color: rgb(128, 218, 231);
+    color: #fff;
+    text-align: left;
+}
+
+h6 {
+    background-color: rgb(137, 214, 224);
+    color: #fff;
+    text-align: left;
+}
+
+p {
+    background-color: #8cdbe7;
+    color: #fff;
+    text-align: left;
+}
+
+b {
+    background-color: #b52424;
+    color: #fff;
+    text-align: left;
+}
+
+i {
+    background-color: #2426b5;
+    color: #fff;
+    text-align: left;
+}
+
+u {
+    background-color: #b5b524;
+    color: #fff;
+    text-align: left;
+}
+
+br {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+}
