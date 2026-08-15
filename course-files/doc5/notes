@@ -1,0 +1,12 @@
+
+
+CREATE A (FILE-NAME.CSS) FILE
+
+learn how to link a css file to html stucture
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index5</title>
+    <link rel="stylesheet" href="style5.css"> <========ADD LINK (CSS FILE) HERE UNDER THE TITLE>
+
+</head>
