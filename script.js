@@ -52,3 +52,28 @@ if (mobileMenuBtn && mainNav) {
     }
   });
 }
+
+// Search the static project cards and resource directory; works without a backend.
+const projectSearch=document.getElementById('projectSearch');
+projectSearch?.addEventListener('input',()=>{
+ const query=projectSearch.value.trim().toLowerCase();let count=0;
+ document.querySelectorAll('.showcase-card').forEach(card=>{card.hidden=!card.dataset.search.includes(query);if(!card.hidden)count++});
+ document.getElementById('projectCount').textContent=`${count} projects`;
+ document.getElementById('projectEmpty').hidden=count!==0;
+});
+const resourceSearch=document.getElementById('resourceSearch');
+const resourceCategory=document.getElementById('resourceCategory');
+function filterResources(){
+ const query=resourceSearch.value.trim().toLowerCase(),category=resourceCategory.value;let count=0;
+ document.querySelectorAll('.resource-group').forEach(group=>{
+  let visible=0;
+  group.querySelectorAll('.resource-card').forEach(card=>{card.hidden=!!(category&&card.dataset.category!==category)||!card.dataset.search.includes(query);if(!card.hidden)visible++});
+  group.hidden=visible===0;count+=visible;
+  if(query||category)group.open=visible>0;
+  else group.open=false;
+ });
+ document.getElementById('resourceCount').textContent=`${count} resources`;
+ document.getElementById('resourceEmpty').hidden=count!==0;
+}
+resourceSearch?.addEventListener('input',filterResources);
+resourceCategory?.addEventListener('change',filterResources);
