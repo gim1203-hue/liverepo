@@ -3,7 +3,9 @@
 // secret named GEMINI_API_KEY. It is never written in this file or in the website.
 
 const ALLOWED_ORIGINS = [
-  "https://gim1203-hue.github.io", // live portfolio
+  "https://imrankhan.nyc",          // portfolio on custom domain
+  "https://www.imrankhan.nyc",
+  "https://gim1203-hue.github.io", // GitHub Pages address
 ];
 const DEFAULT_MODEL = "gemini-3.5-flash-lite"; // same model as Khanu; override with a MODEL variable
 const MAX_QUESTION_CHARS = 500;
@@ -14,7 +16,7 @@ const CONTACT = "gimrankhan1203@gmail.com";
 
 const PROFILE = `
 NAME: Muhammad Imran Khan. Based in the Bronx, New York. Open to Junior Software Engineer, Junior Full-Stack / Front-End Developer and Technical Project Specialist (Construction Technology) roles; available for hybrid and on-site work in the NYC area.
-CONTACT: email ${CONTACT}; LinkedIn linkedin.com/in/gimrankhan; GitHub github.com/gim1203-hue; portfolio gim1203-hue.github.io/liverepo.
+CONTACT: email ${CONTACT}; LinkedIn linkedin.com/in/gimrankhan; GitHub github.com/gim1203-hue; portfolio imrankhan.nyc (also gim1203-hue.github.io/liverepo).
 
 EDUCATION: Hofstra University / QuickStart Software Engineering Program (2026 - present). A.A.S. in Electronic Engineering, Bronx Community College.
 CERTIFICATIONS (QuickStart, 2026, 11 certificates, 74 hours total): JavaScript (15h); Code Foundations: Software Principles, HTML & CSS (13h); React Foundations (8h); Node.js, Express (6h); REST API Integration (6h); Introduction to Databases (6h); AI Prompting & Developer Workflow (6h); Starting with Git & GitHub (4h); Integrated Software Design & UX Principles (4h); Testing & Quality Assurance (3h); Scrum and Agile Immersion (3h). Also OSHA safety training and a valid NYS driver's license.
@@ -29,7 +31,7 @@ PROJECTS (20 live):
 - My AI: OpenAI-powered voice assistant with a back end on Render behind Cloudflare (aihelpall.com).
 - ReadyNeighbor: household preparedness app with Google sign-in, a private checklist and an emergency plan (Render).
 - Student Management System: add students, search by name, filter by course.
-- Others: I Remember (memory journal, i-remembe.app), KhanTech (Cloudflare Worker), My AI GIF (Giphy API), My Weather, My Calendar, SkillSpring, CircleSpark, Pocket Pantry and LaunchLane Planner (AI apps), LinkDeck directory (allofmywork.com), MyAllHub, ImranKhan.nyc, and this portfolio itself (which includes this AI assistant on a Cloudflare Worker).
+- Others: I Remember (memory journal, i-remembe.app), KhanTech (Cloudflare Worker), My AI GIF (Giphy API), My Weather, My Calendar, SkillSpring, CircleSpark, Pocket Pantry and LaunchLane Planner (AI apps), LinkDeck directory (allofmywork.com), MyAllHub, and this portfolio itself at imrankhan.nyc (which includes this AI assistant on a Cloudflare Worker).
 
 EXPERIENCE:
 - Junior Software Engineer, Full-Stack Projects - Hofstra University / QuickStart program and independent projects (July 2026 - present): builds and deploys React apps, Express/MongoDB APIs, AI and voice integrations, deployments and DNS, debugging, testing and documentation.
