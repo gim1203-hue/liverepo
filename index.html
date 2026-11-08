@@ -1,55 +1,923 @@
-<!doctype html><html lang="en"><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Muhammad Imran Khan — Junior Software Engineer</title>
-<meta name="description" content="Muhammad Imran Khan — Junior Software Engineer, NYC Parks Cement Mason, electronic engineering graduate, and experienced construction project manager.">
-<meta name="theme-color" content="#07111f"><link rel="stylesheet" href="style.css"></head><body>
-<div class="wrap nav"><b>MIK / SOFTWARE ENGINEERING</b><button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="navlinks" id="mainNav"><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#resources">Resources</a><a href="#learning">Learning</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div>
-<header class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Junior Software Engineer · NYC Parks Cement Mason</div><h1>Building software with an engineer's discipline.</h1><p>Muhammad Imran Khan combines hands-on JavaScript and web-development work with current/most recent NYC Parks cement-masonry experience, public infrastructure service, and long-term construction project leadership.</p><div class="actions"><a class="btn primary" href="#projects">See Software Projects</a><button class="btn" id="resumeBtn" type="button">View Full Resume</button><a class="btn" href="#contact">Contact</a></div><p style="font-size:13px">Bronx, NY · 347-835-9983 · Bxz_khan99@yahoo.com · muhammad.khan@parks.nyc.gov</p>
-<div class="social-links">
-  <a class="btn social-btn" href="https://github.com/gim1203-hue" target="_blank" rel="noopener">GitHub ↗</a>
-  <a class="btn social-btn disabled-link" href="#contact" title="Add your LinkedIn profile URL later">LinkedIn</a>
-</div></div><div class="profile-photo-card"><img src="profile-photo.jpg" alt="Muhammad Imran Khan professional portrait"><div class="photo-caption"><strong>Muhammad Imran Khan</strong><span>Junior Software Engineer · NYC Parks Cement Mason</span></div></div><aside class="feature"><div class="eyebrow">Professional edge</div><h2>Software + Infrastructure</h2><ul><li>Live JavaScript projects</li><li>A.A.S. Electronic Engineering</li><li>Current/most recent: Cement Mason, NYC Parks</li><li>Construction Project Manager since 2001</li><li>NYC DOT roadway experience</li><li>Team supervision & safety operations</li></ul></aside></div></header>
-<section class="section" id="skills"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Capabilities</div><h2>What I bring to a software team</h2></div><p>The portfolio leads with software, while translating field experience into qualities technology employers value: ownership, debugging mindset, precision, documentation, safety, teamwork and delivery.</p></div><div class="skillgrid"><div class="skill"><h3>Front End</h3><p>HTML5, CSS3, JavaScript, DOM, responsive UI and interactive web applications.</p></div><div class="skill"><h3>Developer Workflow</h3><p>Git, GitHub, VS Code, CLI/PowerShell, deployment, debugging and AI-assisted workflows.</p></div><div class="skill"><h3>Engineering Mindset</h3><p>Electronic engineering education, troubleshooting, measurement, precision and systematic problem solving.</p></div><div class="skill"><h3>Leadership</h3><p>Planning, schedules, budgets, vendors, crews, safety, quality and stakeholder communication.</p></div></div></div></section>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Muhammad Imran Khan — Junior Software Engineer &amp; Full-Stack Developer</title>
+<meta name="description" content="Muhammad Imran Khan — Junior Full-Stack Developer in the Bronx, NY. React, JavaScript, Node.js, Express, REST APIs. Hofstra University / QuickStart software engineering student with 11 completed certifications.">
+<meta name="theme-color" content="#07111f">
+<meta property="og:title" content="Muhammad Imran Khan — Junior Software Engineer &amp; Full-Stack Developer">
+<meta property="og:description" content="Live web apps built with React, JavaScript, Node.js and REST APIs, backed by 20+ years of project leadership.">
+<meta property="og:image" content="profile-photo.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Muhammad Imran Khan","jobTitle":"Junior Full-Stack Developer",
+"email":"mailto:gimrankhan1203@gmail.com","telephone":"+1-347-835-9983",
+"address":{"@type":"PostalAddress","addressLocality":"Bronx","addressRegion":"NY","addressCountry":"US"},
+"url":"https://gim1203-hue.github.io/liverepo/","sameAs":["https://github.com/gim1203-hue","https://www.linkedin.com/in/gimrankhan/"],
+"alumniOf":"Bronx Community College",
+"knowsAbout":["JavaScript","React","Node.js","Express","MongoDB","REST APIs","HTML","CSS","Git","Databases","Testing","Agile","Scrum"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07111f;--bg2:#0c1a2e;--card:#10213a;--card2:#142844;--line:#1f3658;
+  --text:#e8eef7;--muted:#9fb0c8;--accent:#38bdf8;--accent2:#22d3ee;--ok:#34d399;
+  --radius:14px;--max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#000;padding:8px 12px;z-index:100}
+.skip:focus{left:8px}
 
-<section class="section" id="case-study">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Featured Project Case Study</div>
-        <h2>WorldWave — Live Radio Worldwide</h2>
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(7,17,31,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;letter-spacing:.04em;color:var(--text)}
+.brand span{color:var(--accent)}
+.nav ul{display:flex;gap:18px;list-style:none}
+.nav ul a{color:var(--muted);font-weight:500;font-size:.9rem}
+.nav ul a:hover,.nav ul a.active{color:var(--text);text-decoration:none}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 10px;font-size:1.2rem;cursor:pointer}
+@media(max-width:1020px){
+  .menu-btn{display:block}
+  .nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line)}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:14px 20px;border-top:1px solid var(--line)}
+}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--line);color:var(--text);background:var(--card);cursor:pointer;font-family:inherit}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:#04121f;border-color:var(--accent)}
+.btn.primary:hover{background:var(--accent2)}
+
+/* HERO */
+.hero{padding:72px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:600;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:12px 0 18px;font-weight:800}
+.hero p.lead{color:var(--muted);font-size:1.08rem;max-width:600px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 22px}
+.contact-line{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.92rem}
+.photo-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.photo-card img{border-radius:10px;aspect-ratio:1/1;object-fit:cover;width:100%;background:var(--bg2)}
+.photo-card h2{font-size:1.1rem;margin-top:14px}
+.photo-card p{color:var(--muted);font-size:.9rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.stat{background:var(--bg2);border-radius:10px;padding:10px;text-align:center}
+.stat b{display:block;font-size:1.3rem;color:var(--accent)}
+.stat span{font-size:.75rem;color:var(--muted)}
+@media(max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr)}.photo-card{max-width:380px;width:100%}}
+.hero-grid>*{min-width:0}
+.photo-card img{height:auto}
+
+/* SECTIONS */
+section{padding:64px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(1.5rem,3.5vw,2.1rem);font-weight:800;margin-top:6px}
+.sec-head p{color:var(--muted);max-width:700px;margin-top:6px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.g2,.g3{grid-template-columns:minmax(0,1fr)}}
+@media(min-width:600px) and (max-width:860px){.g3{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.card h3{font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{font-size:.75rem;padding:3px 9px;border-radius:999px;background:var(--bg2);border:1px solid var(--line);color:var(--muted)}
+
+
+/* CAPABILITY */
+.cap-lead{font-size:1.1rem;color:var(--text);max-width:860px;line-height:1.7}
+.ach{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.ach .card{text-align:left}
+.ach b{display:block;font-size:2rem;font-weight:800;color:var(--accent);line-height:1.1}
+.ach .card p{margin-top:6px}
+@media(max-width:860px){.ach{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.ach{grid-template-columns:minmax(0,1fr)}}
+.value{margin-top:28px}
+.value li{list-style:none;padding:14px 0 14px 30px;border-top:1px solid var(--line);position:relative;color:var(--muted)}
+.value li:before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+.value li b{color:var(--text)}
+
+/* SKILLS */
+.skill-card ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.skill-card li{font-size:.82rem;padding:4px 10px;border-radius:8px;background:var(--bg2);border:1px solid var(--line)}
+
+/* FEATURED */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-bottom:24px}
+.feature h3{font-size:1.4rem;margin-bottom:8px}
+.feature h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:14px 0 6px}
+.feature p,.feature li{color:var(--muted);font-size:.94rem}
+.feature ul{padding-left:18px}
+@media(max-width:860px){.feature{grid-template-columns:1fr}}
+.proj{display:flex;flex-direction:column}
+.proj .kind{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);font-weight:600}
+.proj .links{margin-top:auto;padding-top:14px;display:flex;gap:14px;font-weight:600;font-size:.9rem}
+
+/* FILTER */
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:18px}
+.search{flex:1;min-width:200px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg2);color:var(--text);font:inherit}
+.chip{padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font:inherit;font-size:.85rem}
+.chip.on{background:var(--accent);color:#04121f;border-color:var(--accent);font-weight:600}
+.count{color:var(--muted);font-size:.85rem}
+.empty{display:none;color:var(--muted);padding:20px 0}
+
+/* LINKEDIN POST */
+.li-wrap{display:flex;justify-content:center}
+.li-frame{width:100%;max-width:504px;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.li-frame iframe{display:block;width:100%;height:627px;border:0}
+.li-link{text-align:center;margin-top:14px;font-weight:600}
+
+/* FULL STACK */
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:stretch;gap:10px;margin-bottom:26px}
+.flow .node{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:center}
+.flow .node b{display:block;color:var(--accent);font-size:.75rem;text-transform:uppercase;letter-spacing:.07em}
+.flow .node span{display:block;font-weight:700;margin-top:4px}
+.flow .node small{display:block;color:var(--muted);font-size:.8rem;margin-top:4px}
+.flow .arrow{display:grid;place-items:center;color:var(--accent);font-weight:800;font-size:1.3rem}
+@media(max-width:860px){.flow{grid-template-columns:minmax(0,1fr)}.flow .arrow{transform:rotate(90deg);height:24px}}
+.layer h3{display:flex;align-items:center;gap:8px}
+.layer .num{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:7px;background:var(--bg2);border:1px solid var(--line);color:var(--accent);font-size:.8rem}
+.layer ul{margin-top:8px;padding-left:18px}
+.layer li{color:var(--muted);font-size:.9rem;margin-bottom:3px}
+.layer .ex{margin-top:10px;font-size:.82rem;color:var(--text);background:var(--bg2);border-radius:8px;padding:8px 10px}
+
+/* ROLE FIT */
+.fit{width:100%;border-collapse:collapse;margin-top:14px;font-size:.92rem}
+.fit th{text-align:left;color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;padding:10px;border-bottom:1px solid var(--line)}
+.fit td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--muted)}
+.fit td:first-child{color:var(--text);font-weight:600;width:38%}
+@media(max-width:700px){.fit thead{display:none}.fit tr{display:block;padding:10px 0;border-bottom:1px solid var(--line)}.fit td{display:block;border:0;padding:3px 0;width:auto!important}}
+.roles{margin-top:28px}
+.fit .ck{color:var(--ok);font-weight:800;margin-right:8px}
+.fit tr.grp td{color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;padding-top:22px;width:auto}
+@media(max-width:700px){.fit tr.grp{border-bottom:0;padding-bottom:0}}
+
+/* CERT IMAGES + LIGHTBOX */
+.cert-img{display:block;width:100%;border-radius:8px;margin-bottom:12px;cursor:zoom-in;border:1px solid var(--line);background:#fff;padding:0}
+.cert-img img{width:100%;height:auto;border-radius:8px;aspect-ratio:1056/820;object-fit:contain;background:#fff}
+.cert-card{display:flex;flex-direction:column}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;z-index:90;align-items:center;justify-content:center;padding:20px;flex-direction:column;gap:12px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1000px,100%);max-height:80vh;border-radius:8px;background:#fff}
+.lightbox p{color:#fff;font-weight:600;text-align:center}
+
+/* LINKEDIN GRID */
+.li-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:18px;align-items:start}
+.li-grid .li-frame{max-width:none}
+
+/* CERTS */
+.cert{display:flex;gap:14px;align-items:flex-start}
+.cert .badge{flex:none;width:40px;height:40px;border-radius:10px;background:var(--bg2);border:1px solid var(--line);display:grid;place-items:center;color:var(--ok);font-weight:800}
+.cert .meta{font-size:.8rem;color:var(--muted);margin-top:4px}
+.verify{margin-top:18px;color:var(--muted);font-size:.88rem}
+
+/* EXPERIENCE */
+.job{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+.job button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;background:none;border:0;color:var(--text);padding:18px 20px;text-align:left;cursor:pointer;font:inherit}
+.job button:hover{background:var(--card2)}
+.job .title{font-weight:700}
+.job .org{color:var(--muted);font-size:.9rem}
+.job .when{color:var(--accent);font-size:.85rem;font-weight:600;text-align:right}
+.job .chev{transition:transform .2s;color:var(--muted)}
+.job.open .chev{transform:rotate(180deg)}
+.job .body{display:none;padding:0 20px 18px 38px}
+.job.open .body{display:block}
+.job .body li{color:var(--muted);font-size:.93rem;margin-bottom:4px}
+.exp-tools{display:flex;gap:10px;margin-bottom:14px}
+
+/* CONTACT */
+.contact-box{text-align:center}
+.contact-box .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:.85rem;text-align:center}
+
+/* RESUME MODAL */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;z-index:80;overflow:auto;padding:30px 12px}
+.modal.open{display:block}
+.modal-bar{max-width:820px;margin:0 auto 10px;display:flex;justify-content:flex-end;gap:10px}
+.resume{max-width:820px;margin:0 auto;background:#fff;color:#111;padding:44px 48px;border-radius:6px;font-size:10.5pt;line-height:1.45}
+.resume h1{font-size:22pt;margin-bottom:2px}
+.resume .r-title{font-size:11.5pt;font-weight:600;color:#1e3a5f}
+.resume .r-contact{font-size:9.5pt;color:#333;margin:6px 0 12px}
+.resume .r-contact a{color:#1e3a5f}
+.resume h2{font-size:10.5pt;text-transform:uppercase;letter-spacing:.08em;border-bottom:1.5px solid #1e3a5f;color:#1e3a5f;margin:14px 0 6px;padding-bottom:2px}
+.resume .r-row{display:flex;justify-content:space-between;gap:10px;font-weight:700;margin-top:8px}
+.resume .r-row span{font-weight:400;white-space:nowrap}
+.resume .r-sub{font-style:italic;color:#333}
+.resume ul{padding-left:18px;margin-top:3px}
+.resume li{margin-bottom:2px}
+.resume p{margin-bottom:4px}
+@media(max-width:600px){.resume{padding:24px 18px}}
+@media print{
+  body *{visibility:hidden}
+  .resume,.resume *{visibility:visible}
+  .modal{position:static;padding:0;background:none;display:block}
+  .resume{position:absolute;left:0;top:0;padding:0;max-width:none;border-radius:0}
+  .modal-bar{display:none}
+  @page{margin:0.55in}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">MIK<span>.dev</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navList">☰</button>
+    <ul id="navList">
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#fullstack">Full Stack</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Junior Software Engineer · Full-Stack · Construction Technology · Bronx, NY</p>
+      <h1>Building reliable web apps with an engineer's discipline.</h1>
+      <p class="lead">I build and deploy full-stack web applications with React, Node.js, Express, MongoDB and REST APIs. I'm completing software engineering training through Hofstra University and QuickStart, and I bring an electronic engineering degree and 25 years of construction project leadership to every team I join.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <button class="btn" type="button" id="openResume">View Resume</button>
+        <a class="btn" href="https://github.com/gim1203-hue" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/gimrankhan/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
-      <p>A focused example of how I turn an idea into a working browser application using JavaScript, DOM events, filtering, and live user interaction.</p>
+      <div class="contact-line">
+        <a href="mailto:gimrankhan1203@gmail.com">gimrankhan1203@gmail.com</a>
+        <a href="tel:+13478359983">347-835-9983</a>
+        <span>Bronx, New York</span>
+      </div>
     </div>
-    <div class="case-study-grid">
-      <div class="panel case-study-main">
-        <h3>The Problem</h3>
-        <p>Users need a simple way to explore radio stations from different countries without navigating multiple websites or manually searching station by station.</p>
-        <h3>The Solution</h3>
-        <p>I built an interactive web experience that organizes worldwide stations into a searchable, filterable interface with live playback controls and responsive behavior.</p>
-        <h3>What I Worked On</h3>
-        <ul>
-          <li>Structured the interface with semantic HTML and responsive CSS.</li>
-          <li>Used JavaScript to manage user interactions, station filtering, search, and playback controls.</li>
-          <li>Organized the code so UI behavior and data-driven actions stay understandable and maintainable.</li>
-          <li>Published the project with GitHub Pages and tested the live site in the browser.</li>
-        </ul>
+    <aside class="photo-card">
+      <img src="profile-photo.jpg" alt="Portrait of Muhammad Imran Khan" width="400" height="400">
+      <h2>Muhammad Imran Khan</h2>
+      <p>Junior Full-Stack Developer · A.A.S. Electronic Engineering</p>
+      <div class="stats">
+        <div class="stat"><b>11</b><span>Certifications</span></div>
+        <div class="stat"><b>20</b><span>Live projects</span></div>
+        <div class="stat"><b>25</b><span>Years leading projects</span></div>
       </div>
-      <div class="panel case-study-side">
-        <h3>Technology</h3>
-        <div class="case-tags">
-          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>DOM</span><span>Git</span><span>GitHub Pages</span>
-        </div>
-        <h3>Engineering Takeaway</h3>
-        <p>This project demonstrates the same habits I use in construction and field operations: break the problem down, organize the workflow, test each part, correct issues, and deliver something people can actually use.</p>
-        <a class="btn primary" href="https://gim1203-hue.github.io/my-radio/" target="_blank" rel="noopener">Open WorldWave ↗</a>
-      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- CAPABILITY SUMMARY -->
+<section id="summary">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Capability Summary</p>
+      <h2>Why hire me</h2>
+    </div>
+    <p class="cap-lead">Junior full-stack developer who ships working software, not just coursework. In four months I completed 11 software engineering certifications and published 20 live web apps, including a full-stack capstone, across four hosting platforms, while bringing 25 years of experience planning budgets, leading crews and delivering construction projects.</p>
+
+    <div class="ach">
+      <div class="card"><b>20</b><p>Live web apps published on GitHub Pages, Vercel, Cloudflare Workers and Render.</p></div>
+      <div class="card"><b>11</b><p>QuickStart certifications (74 hours) completed July–November 2026.</p></div>
+      <div class="card"><b>5+</b><p>Public APIs integrated, including Radio Browser, Gemini, OpenAI and Giphy.</p></div>
+      <div class="card"><b>25</b><p>Years managing construction projects, budgets, vendors and crews.</p></div>
+    </div>
+
+    <ul class="value">
+      <li><b>Full-stack foundation:</b> front end in HTML, CSS, JavaScript and React; back end in Node.js and Express; MongoDB databases, JWT login and REST API integration.</li>
+      <li><b>Ships to production:</b> takes projects from idea to a live URL, manages custom domains and DNS through Cloudflare, and has rebuilt a working JavaScript app in React.</li>
+      <li><b>Team-ready process:</b> trained in Git and GitHub, testing and QA, Scrum and Agile, and UX-driven software design.</li>
+      <li><b>Construction + software:</b> understands how construction work is planned, bid, scheduled and documented, and builds web tools for that world, including the live New Prime Construction website.</li>
+      <li><b>Proven reliability:</b> 10 years of NYC public-service work and 25 years of project ownership: deadlines, safety, documentation and accountability.</li>
+    </ul>
+
+    <div class="roles">
+      <h3 style="font-size:1.25rem">Job requirements checklist</h3>
+      <p style="color:var(--muted);margin-top:4px">For Junior Software Engineer, Full-Stack Developer and Technical Project Specialist (Construction Technology) roles. Every responsibility and qualification, with proof you can click through on this page.</p>
+      <table class="fit">
+        <thead><tr><th>Requirement</th><th>My evidence</th></tr></thead>
+        <tbody>
+          <tr class="grp"><td colspan="2">Core responsibilities</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Design, build and deploy responsive web applications and interactive client portals using HTML, CSS, JavaScript and React</td><td>20 live apps. Khanu Learning (React + Vite) has accounts, bookings and a My Sessions portal; the New Prime Construction site (React, React Router, Motion) is a client-facing site with an estimate request form.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Integrate third-party RESTful APIs, asynchronous services and voice/AI functionality</td><td>Google Gemini (Khanu, My Free AI), OpenAI voice assistant (My AI), browser Web Speech API for voice, Radio Browser and Giphy APIs, all with fetch and async/await.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Maintain codebases, version control and clean deployments with Git, GitHub, VS Code, Cloudflare Workers and Vercel</td><td>Every project lives in GitHub; deployed to Vercel, Cloudflare Workers, Render and GitHub Pages. This portfolio is version-controlled and published from GitHub.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Front-end DOM manipulation, interactive features and UI/UX testing</td><td>Vanilla JavaScript apps (WorldWave original, Weather, Calendar). On this page: live project search and filters, expandable job history, certificate viewer and resume pop-up, tested at phone, tablet and desktop sizes. UX Principles and Testing &amp; QA certifications.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Partner with software engineers, project managers and field teams to turn operational needs into software tools</td><td>Built projects under the guidance of senior software engineer and instructor Usman Saleem; 25 years coordinating clients, crews, subcontractors and suppliers; turned a construction company's needs into its live website.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Debug front-end and back-end logic, optimize load speed, manage custom domains and DNS</td><td>Debugged deployment settings and AI-provider failures in Khanu (retry + labeled fallback). This page lazy-loads images and embeds and uses compressed images (~57 KB each). Custom domains managed through Cloudflare and Namecheap: newprimeconstruction.com, aihelpall.com, i-remembe.app, imrankhan.nyc.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Document architectures, workflows and specifications for non-technical stakeholders</td><td>Khanu README documents features, setup, environment variables and known limitations. The "Full stack, explained" section on this page explains app architecture in plain English. 25 years writing project documentation for clients.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Engineering precision and accountability for sprint deadlines and deployment milestones</td><td>11 certifications completed on schedule in four months; Scrum and Agile Immersion certification; 25 years delivering construction projects against schedules and budgets.</td></tr>
+          <tr class="grp"><td colspan="2">Qualifications</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Formal Software Engineering training plus an Electronic Engineering background</td><td>Hofstra University / QuickStart Software Engineering Program (2026, 11 certificates, 74 hours); A.A.S. in Electronic Engineering, Bronx Community College.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>HTML5, CSS3, JavaScript (ES6+), React, Git, GitHub, REST APIs, Vercel, Render, Cloudflare</td><td>Certified in each core area (Code Foundations, JavaScript, React, Git &amp; GitHub, REST API Integration, Node.js/Express) and using all of them in live projects.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Portfolio of deployed web apps, API integrations and AI voice/chat tools</td><td>20 live projects on this page, including My Free AI (voice + chat), My AI (OpenAI voice assistant) and Khanu (AI recommendations).</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Construction project management, budgeting, subcontractor procurement, site logistics</td><td>Project Manager at New Prime Construction since 2001: scope, estimating, budgets, bids, procurement, subcontractors and closeout. 10 years of NYC Parks and DOT field operations.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Problem-solving, debugging, attention to detail and team communication</td><td>Field repair and infrastructure work to exact specifications; crew coordination and supervision; debugging and testing across 20 projects.</td></tr>
+          <tr><td><span class="ck" aria-hidden="true">✓</span>Based in the Bronx / NYC metro area with hybrid availability</td><td>Based in the Bronx, New York; available for hybrid and on-site work.</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<section class="section" id="experience"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Detailed Career History</div><h2>Every role, with responsibilities</h2></div><p>Click any title to expand or collapse it. The NYC civil-service descriptions have been expanded into concise portfolio language.</p></div><div class="jobs"><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>Seasonal Cement Mason — Current / Most Recent Skilled-Trade Role</strong></span><time>2026</time></summary><ul><li>Prepare, mix, place, screed, float and finish cement and concrete to specified grade, contour and surface requirements.</li><li>Build, align and remove forms; place concrete for sidewalks, pavements, floors, foundations and retaining-wall work.</li><li>Repair deteriorated, cracked and spalled concrete; perform patching and restoration of public-facing infrastructure.</li><li>Estimate job needs and help prepare material requisitions; protect tools, equipment, work zones, coworkers and the public.</li><li>Maintain work records and reports; coordinate with crews and supervisors; support safe, orderly job-site operations.</li><li>Use hand and power tools associated with concrete preparation, placement, demolition, edging and finishing.</li></ul></details><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>Maintenance Worker</strong></span><time>2019–2026 assignments</time></summary><ul><li>Perform building and facility maintenance and minor repairs involving masonry, woodwork, flooring, walls, hardware and equipment.</li><li>Support minor electrical, plumbing and heating-system maintenance; inspect conditions and identify repair needs.</li><li>Maintain service records, work documentation and reports; respond to assigned work orders and facility needs.</li><li>Operate vehicles between work locations and transport tools, materials and equipment.</li><li>Support special events, seasonal operations and emergency maintenance; keep work areas safe, clean and serviceable.</li></ul></details><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>Associate Park Service Worker (APSW)</strong></span><time>2017–2018 / Parks assignments</time></summary><ul><li>Operate trucks, trailers and motorized field equipment safely; inspect and maintain tools, vehicles and equipment.</li><li>Perform construction, demolition, concrete mixing/spreading, grounds and facility repair, landscape and public-space maintenance.</li><li>Track projects, work orders, assignments, timesheets and supplies; document completed work accurately.</li><li>Supervise or guide assigned personnel when required and inspect work for quality, timeliness and agency standards.</li><li>Respond with crews to snowstorms, emergencies and citywide operational needs.</li></ul></details><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>City Park Worker (CPW)</strong></span><time>2016–2021 assignments</time></summary><ul><li>Maintain parks, playgrounds, grounds and facilities through cleaning, landscaping, snow removal and seasonal operations.</li><li>Perform minor masonry, plumbing, electrical, painting, carpentry, metal and equipment repairs as assigned.</li><li>Drive agency vehicles and operate motorized equipment; perform safety checks on facilities, tools and equipment.</li><li>Prepare pools, courts and public spaces; sweep and remove litter and maintain public restrooms and other facilities.</li><li>Move materials and equipment and perform physically demanding outdoor work in changing weather conditions.</li></ul></details><details class="job" open><summary><span><b>NYC Department of Transportation</b><strong>Assistant City Highway Repairer</strong></span><time>2017–2018</time></summary><ul><li>Assist with repair of curbs, sidewalks, roadway pavement, manhole edges and defective patches.</li><li>Carry cement, sand and stone; mix and place concrete and asphalt; prepare defective areas for patching.</li><li>Assist with foundation work, shoring and sheeting, masonry/forms, loading and unloading construction materials.</li><li>Operate or assist with portable/towed power equipment; care for tools and support vehicle inspections and maintenance.</li><li>Clean construction sites, remove debris, perform snow operations and help direct traffic safely around work zones.</li></ul></details><details class="job" open><summary><span><b>New Prime Construction Corporation</b><strong>Project Manager</strong></span><time>June 2001–Present</time></summary><ul><li>Plan and coordinate construction projects from scope definition and estimating through execution, closeout and client handoff.</li><li>Build schedules, track milestones, coordinate subcontractors and trades, and resolve field issues before they affect delivery.</li><li>Manage budgets, cost estimates, bids, change considerations, material procurement, equipment needs and vendor relationships.</li><li>Coordinate clients, field crews, suppliers and outside professionals; communicate progress, constraints and next actions.</li><li>Maintain project documentation and support quality, code, safety and site requirements.</li><li>Balance multiple priorities, resources and deadlines while maintaining accountability for project outcomes.</li></ul></details><details class="job" open><summary><span><b>Mosholu Montefiore Community Center / Child Development Center</b><strong>Night Supervisor</strong></span><time>June 2024–January 2025</time></summary><ul><li>Supervised evening operations, staff coverage, scheduling, building security, cleanliness and safe facility use.</li><li>Coordinated on-site logistics and responded to operational issues to keep programs and facilities running smoothly.</li><li>Monitored completion of assigned duties and communicated needs, incidents and handoffs to appropriate staff.</li><li>Supported a professional, orderly environment for community and child-development activities.</li></ul></details></div></div></section>
-<section class="section" id="projects"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Software Portfolio</div><h2>My project showcase</h2></div><p>Explore my applications, personal websites, and alternate deployments. Some projects require an account to access.</p></div><div class="showcase-tools"><label for="projectSearch">Find a project<input id="projectSearch" type="search" placeholder="Search projects…"/></label><p id="projectCount" role="status">22 projects</p></div><div class="projects" id="projectGrid"><article class="project showcase-card" data-category="Project hub" data-search="all of my work · linkdeck a central directory for my applications, development tools, and learning resources. project hub "><div class="project-top"><small>Personal project</small><h3>All of My Work · LinkDeck</h3></div><p>A central directory for my applications, development tools, and learning resources.</p><a href="https://www.allofmywork.com/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="worldwave react radio browser — pick a country, stream any live station on the radio browser api. my live apps "><div class="project-top"><small>Personal project</small><h3>WorldWave</h3></div><p>React radio browser — pick a country, stream any live station on the Radio Browser API.</p><a href="https://worldwave-react-beta.vercel.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="my free ai zero-cost voice + chat assistant: gemini for the brain, the browser’s own speech apis for voice. my live apps "><div class="project-top"><small>Personal project</small><h3>My Free AI</h3></div><p>Zero-cost voice + chat assistant: Gemini for the brain, the browser’s own speech APIs for voice.</p><a href="https://my-free-ai.vercel.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="my ai (private) original openai-powered voice assistant, on render behind cloudflare. my live apps "><div class="project-top"><small>Personal project</small><h3>My AI (Private)</h3></div><p>Original OpenAI-powered voice assistant, on Render behind Cloudflare.</p><a href="https://aihelpall.com/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="i-remembe (vercel) personal memory-journal app — production build. my live apps "><div class="project-top"><small>Personal project</small><h3>i-Remembe (Vercel)</h3></div><p>Personal memory-journal app — production build.</p><a href="https://www.i-remembe.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="i-remembe (github) same memory-journal app, github pages build. my live apps "><div class="project-top"><small>Personal project</small><h3>i-Remembe (GitHub)</h3></div><p>Same memory-journal app, GitHub Pages build.</p><a href="https://gim1203-hue.github.io/i-remember/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="khantech personal project running directly on a cloudflare worker. my live apps "><div class="project-top"><small>Personal project</small><h3>KhanTech</h3></div><p>Personal project running directly on a Cloudflare Worker.</p><a href="https://khantech.khantech.workers.dev/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="mira private companion custom gpt-based companion app. my live apps "><div class="project-top"><small>Personal project</small><h3>Mira Private Companion</h3></div><p>Custom GPT-based companion app.</p><a href="https://mira-private-companion.imran-4151.chatgpt.site/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="myallhub personal all-in-one hub site. my live apps "><div class="project-top"><small>Personal project</small><h3>MyAllHub</h3></div><p>Personal all-in-one hub site.</p><a href="http://myallhub.com/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="my profile portfolio / profile page. my live apps "><div class="project-top"><small>Personal project</small><h3>My Profile</h3></div><p>Portfolio / profile page.</p><a href="https://gim1203-hue.github.io/liverepo/" target="_blank" rel="noopener noreferrer">View portfolio ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="new prime construction (staging) construction business site — vercel staging build. my live apps "><div class="project-top"><small>Personal project</small><h3>New Prime Construction (staging)</h3></div><p>Construction business site — Vercel staging build.</p><a href="https://gim1203-hue-mrusmanupdate-tau.vercel.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="new prime construction construction business site — live domain. my live apps "><div class="project-top"><small>Personal project</small><h3>New Prime Construction</h3></div><p>Construction business site — live domain.</p><a href="https://newprimeconstruction.com/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="my ai gif gif-focused mini project. my live apps "><div class="project-top"><small>Personal project</small><h3>My AI GIF</h3></div><p>GIF-focused mini project.</p><a href="https://gim1203-hue.github.io/my-ai-gif/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="my radio the original vanilla js radio browser — worldwave’s predecessor. my live apps "><div class="project-top"><small>Personal project</small><h3>My Radio</h3></div><p>The original vanilla JS radio browser — WorldWave’s predecessor.</p><a href="https://gim1203-hue.github.io/my-radio/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="my weather weather-lookup mini project. my live apps "><div class="project-top"><small>Personal project</small><h3>My Weather</h3></div><p>Weather-lookup mini project.</p><a href="https://gim1203-hue.github.io/my-weather/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="my calendar calendar mini project. my live apps "><div class="project-top"><small>Personal project</small><h3>My Calendar</h3></div><p>Calendar mini project.</p><a href="https://gim1203-hue.github.io/my-calendar/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="ready neighbor community / neighbor-focused project. my live apps "><div class="project-top"><small>Personal project</small><h3>Ready Neighbor</h3></div><p>Community / neighbor-focused project.</p><a href="https://gim1203-hue.github.io/ready-neighbor/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="skill spring skill-building project. my live apps "><div class="project-top"><small>Personal project</small><h3>Skill Spring</h3></div><p>Skill-building project.</p><a href="https://gim1203-hue.github.io/skill-spring/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="circle spark community / social project. my live apps "><div class="project-top"><small>Personal project</small><h3>Circle Spark</h3></div><p>Community / social project.</p><a href="https://gim1203-hue.github.io/circle-spark/#/home" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="pocket-pantry pantry / recipe-tracking custom gpt app. my live apps "><div class="project-top"><small>Personal project</small><h3>Pocket-Pantry</h3></div><p>Pantry / recipe-tracking custom GPT app.</p><a href="https://pocketpantry.imran-4151.chatgpt.site/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="My Live Apps" data-search="launchlane planner launch-planning custom gpt app. my live apps "><div class="project-top"><small>Personal project</small><h3>LaunchLane Planner</h3></div><p>Launch-planning custom GPT app.</p><a href="https://launchlane-planner.imran-4151.chatgpt.site/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article><article class="project showcase-card" data-category="Personal website" data-search="imrankhan.nyc earlier personal website documenting my web-development progression. personal website "><div class="project-top"><small>Personal project</small><h3>ImranKhan.nyc</h3></div><p>Earlier personal website documenting my web-development progression.</p><a href="https://imrankhan.nyc/" target="_blank" rel="noopener noreferrer">Open project ↗</a></article></div><p id="projectEmpty" hidden>No projects match your search.</p></div></section><section class="section" id="resources"><div class="wrap"><div class="section-head"><div><div class="eyebrow">My development directory</div><h2>Tools & learning resources</h2></div><p>The external tools, documentation, account dashboards, and workspaces collected in LinkDeck. These are resources for development; account dashboards may require sign-in.</p></div><div class="showcase-tools"><label for="resourceSearch">Find a resource<input id="resourceSearch" type="search" placeholder="Search tools, topics, or roles…"/></label><label for="resourceCategory">Category<select id="resourceCategory"><option value="">All categories</option><option value="My Live Apps">Workspaces &amp; Local Development</option><option value="Dashboards &amp; Accounts">Dashboards &amp; Accounts</option><option value="Free AI Websites">Free AI Websites</option><option value="AI &amp; Search APIs">AI &amp; Search APIs</option><option value="Docs &amp; Learning">Docs &amp; Learning</option><option value="Code Editors &amp; Sandboxes">Code Editors &amp; Sandboxes</option><option value="API &amp; Testing Tools">API &amp; Testing Tools</option><option value="Version Control &amp; CI/CD">Version Control &amp; CI/CD</option><option value="Databases &amp; Backend">Databases &amp; Backend</option><option value="Mobile Dev">Mobile Dev</option><option value="Design &amp; Assets">Design &amp; Assets</option><option value="Project Management &amp; Comms">Project Management &amp; Comms</option><option value="Monitoring &amp; DevOps">Monitoring &amp; DevOps</option></select></label><p id="resourceCount" role="status">101 resources</p></div><details class="resource-group" data-group="My Live Apps"><summary>Workspaces &amp; Local Development <span>2 links</span></summary><div class="projects"><article class="project resource-card" data-category="My Live Apps" data-search="toonbee toonbee project workspace. my live apps "><div class="project-top"><small>External workspace · sign-in may be required</small><h3>Toonbee</h3></div><p>Toonbee project workspace.</p><a href="https://app.toonbee.ai/projects" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="My Live Apps" data-search="localhost 5173 your current local vite dev server. only resolves while it’s running on this computer. my live apps "><div class="project-top"><small>Local development · this computer only</small><h3>Localhost 5173</h3></div><p>Your current local Vite dev server. Only resolves while it’s running on this computer.</p><a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Dashboards &amp; Accounts"><summary>Dashboards &amp; Accounts <span>13 links</span></summary><div class="projects"><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="github source control home — repos, issues, pages settings. dashboards &amp; accounts full-stack · devops"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>GitHub</h3></div><p>Source control home — repos, issues, Pages settings.</p><p class="link-roles">Full-Stack · DevOps</p><a href="https://github.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="vercel dashboard every deployed project, its domains, and its environment variables. dashboards &amp; accounts devops"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Vercel Dashboard</h3></div><p>Every deployed project, its domains, and its environment variables.</p><p class="link-roles">DevOps</p><a href="https://vercel.com/usman-f5ed" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="cloudflare dashboard dns records and proxy settings for your domains. dashboards &amp; accounts devops · security"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Cloudflare Dashboard</h3></div><p>DNS records and proxy settings for your domains.</p><p class="link-roles">DevOps · Security</p><a href="https://dash.cloudflare.com/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="render dashboard hosts aihelpall.com’s backend — logs and env vars live here. dashboards &amp; accounts devops"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Render Dashboard</h3></div><p>Hosts aihelpall.com’s backend — logs and env vars live here.</p><p class="link-roles">DevOps</p><a href="https://dashboard.render.com/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="namecheap dashboard domain registrar — dns and renewals. dashboards &amp; accounts devops"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Namecheap Dashboard</h3></div><p>Domain registrar — DNS and renewals.</p><p class="link-roles">DevOps</p><a href="https://ap.www.namecheap.com/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="supabase dashboard hosted postgres database and auth backend. dashboards &amp; accounts backend · data"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Supabase Dashboard</h3></div><p>Hosted Postgres database and auth backend.</p><p class="link-roles">Backend · Data</p><a href="https://supabase.com/dashboard" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="giphy developers gif api keys and usage. dashboards &amp; accounts frontend · full-stack"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Giphy Developers</h3></div><p>GIF API keys and usage.</p><p class="link-roles">Frontend · Full-Stack</p><a href="https://developers.giphy.com/dashboard/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="hofstra bootcamp your coding bootcamp course portal. dashboards &amp; accounts "><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Hofstra Bootcamp</h3></div><p>Your coding bootcamp course portal.</p><a href="https://hofstra.quickstart.com/my-dashboard/#/bootcamp" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="the movie database movie / tv metadata api account. dashboards &amp; accounts backend · full-stack"><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>The Movie Database</h3></div><p>Movie / TV metadata API account.</p><p class="link-roles">Backend · Full-Stack</p><a href="https://www.themoviedb.org/login/username" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="google developers your google developer profile hub. dashboards &amp; accounts "><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Google Developers</h3></div><p>Your Google developer profile hub.</p><a href="https://me.developers.google.com/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="microsoft microsoft account and services home. dashboards &amp; accounts "><div class="project-top"><small>Dashboards &amp; Accounts</small><h3>Microsoft</h3></div><p>Microsoft account and services home.</p><a href="https://www.microsoft.com/en-us" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="firebase console free-tier auth, firestore, and hosting — the backend for your intern-tool calendar app. dashboards &amp; accounts backend · data · full-stack"><div class="project-top"><small>Suggested resource</small><h3>Firebase Console</h3></div><p>Free-tier auth, Firestore, and hosting — the backend for your intern-tool calendar app.</p><p class="link-roles">Backend · Data · Full-Stack</p><a href="https://console.firebase.google.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Dashboards &amp; Accounts" data-search="netlify another free static-hosting option, alongside vercel and render. dashboards &amp; accounts devops"><div class="project-top"><small>Suggested resource</small><h3>Netlify</h3></div><p>Another free static-hosting option, alongside Vercel and Render.</p><p class="link-roles">DevOps</p><a href="https://app.netlify.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Free AI Websites"><summary>Free AI Websites <span>10 links</span></summary><div class="projects"><article class="project resource-card" data-category="Free AI Websites" data-search="chatgpt free-tier general chat ai from openai — a second opinion next to gemini. free ai websites ml/ai"><div class="project-top"><small>Suggested resource</small><h3>ChatGPT</h3></div><p>Free-tier general chat AI from OpenAI — a second opinion next to Gemini.</p><p class="link-roles">ML/AI</p><a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="claude.ai free-tier chat ai, especially strong at reading and writing code. free ai websites ml/ai · full-stack"><div class="project-top"><small>Suggested resource</small><h3>Claude.ai</h3></div><p>Free-tier chat AI, especially strong at reading and writing code.</p><p class="link-roles">ML/AI · Full-Stack</p><a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="google gemini the free chat website version of the same gemini api powering my free ai. free ai websites ml/ai"><div class="project-top"><small>Suggested resource</small><h3>Google Gemini</h3></div><p>The free chat website version of the same Gemini API powering My Free AI.</p><p class="link-roles">ML/AI</p><a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="microsoft copilot free gpt-class chat from microsoft, no account required for basic use. free ai websites ml/ai"><div class="project-top"><small>Suggested resource</small><h3>Microsoft Copilot</h3></div><p>Free GPT-class chat from Microsoft, no account required for basic use.</p><p class="link-roles">ML/AI</p><a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="perplexity free ai search engine that answers questions and links its sources. free ai websites ml/ai"><div class="project-top"><small>Suggested resource</small><h3>Perplexity</h3></div><p>Free AI search engine that answers questions and links its sources.</p><p class="link-roles">ML/AI</p><a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="deepseek chat free chat ai, well-regarded for reasoning and coding tasks. free ai websites ml/ai"><div class="project-top"><small>Suggested resource</small><h3>DeepSeek Chat</h3></div><p>Free chat AI, well-regarded for reasoning and coding tasks.</p><p class="link-roles">ML/AI</p><a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="poe one free interface for trying many different ai chat models side by side. free ai websites ml/ai"><div class="project-top"><small>Suggested resource</small><h3>Poe</h3></div><p>One free interface for trying many different AI chat models side by side.</p><p class="link-roles">ML/AI</p><a href="https://poe.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="hugging face spaces thousands of free community-hosted ai demos — image, chat, voice, video models. free ai websites ml/ai · data"><div class="project-top"><small>Suggested resource</small><h3>Hugging Face Spaces</h3></div><p>Thousands of free community-hosted AI demos — image, chat, voice, video models.</p><p class="link-roles">ML/AI · Data</p><a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="microsoft designer free ai image generation, built on bing’s image model. free ai websites ml/ai · frontend"><div class="project-top"><small>Suggested resource</small><h3>Microsoft Designer</h3></div><p>Free AI image generation, built on Bing’s image model.</p><p class="link-roles">ML/AI · Frontend</p><a href="https://designer.microsoft.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Free AI Websites" data-search="codeium free ai autocomplete for your code editor — an alternative to tabnine. free ai websites full-stack · ml/ai"><div class="project-top"><small>Suggested resource</small><h3>Codeium</h3></div><p>Free AI autocomplete for your code editor — an alternative to TabNine.</p><p class="link-roles">Full-Stack · ML/AI</p><a href="https://codeium.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="AI &amp; Search APIs"><summary>AI &amp; Search APIs <span>8 links</span></summary><div class="projects"><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="openai platform api keys, usage, and billing for gpt models — where my ai’s credit balance lives. ai &amp; search apis ml/ai · backend"><div class="project-top"><small>AI &amp; Search APIs</small><h3>OpenAI Platform</h3></div><p>API keys, usage, and billing for GPT models — where My AI’s credit balance lives.</p><p class="link-roles">ML/AI · Backend</p><a href="https://platform.openai.com/home" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="google ai studio free gemini api keys — powers my free ai’s chat. ai &amp; search apis ml/ai · backend"><div class="project-top"><small>AI &amp; Search APIs</small><h3>Google AI Studio</h3></div><p>Free Gemini API keys — powers My Free AI’s chat.</p><p class="link-roles">ML/AI · Backend</p><a href="https://aistudio.google.com/api-keys" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="serpapi free-tier google search results api — powers my free ai’s web search tab. ai &amp; search apis backend · full-stack"><div class="project-top"><small>AI &amp; Search APIs</small><h3>SerpAPI</h3></div><p>Free-tier Google search results API — powers My Free AI’s Web Search tab.</p><p class="link-roles">Backend · Full-Stack</p><a href="https://serpapi.com/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="google programmable search site-restricted search engine builder (new engines can no longer search the whole web). ai &amp; search apis backend"><div class="project-top"><small>AI &amp; Search APIs</small><h3>Google Programmable Search</h3></div><p>Site-restricted search engine builder (new engines can no longer search the whole web).</p><p class="link-roles">Backend</p><a href="https://programmablesearchengine.google.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="google custom search api enable or manage the custom search api in google cloud. ai &amp; search apis backend"><div class="project-top"><small>AI &amp; Search APIs</small><h3>Google Custom Search API</h3></div><p>Enable or manage the Custom Search API in Google Cloud.</p><p class="link-roles">Backend</p><a href="https://console.cloud.google.com/apis/library/customsearch.googleapis.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="google cloud api credentials create and manage keys for any enabled google cloud api (custom search, youtube, etc.). ai &amp; search apis backend · devops"><div class="project-top"><small>AI &amp; Search APIs</small><h3>Google Cloud API Credentials</h3></div><p>Create and manage keys for any enabled Google Cloud API (Custom Search, YouTube, etc.).</p><p class="link-roles">Backend · DevOps</p><a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="hugging face free-tier hosted models and inference api — a fallback if gemini’s limits run out. ai &amp; search apis ml/ai · data"><div class="project-top"><small>Suggested resource</small><h3>Hugging Face</h3></div><p>Free-tier hosted models and inference API — a fallback if Gemini’s limits run out.</p><p class="link-roles">ML/AI · Data</p><a href="https://huggingface.co" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="AI &amp; Search APIs" data-search="anthropic console api keys and usage for claude, for calling it directly from your own code. ai &amp; search apis ml/ai · backend"><div class="project-top"><small>Suggested resource</small><h3>Anthropic Console</h3></div><p>API keys and usage for Claude, for calling it directly from your own code.</p><p class="link-roles">ML/AI · Backend</p><a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Docs &amp; Learning"><summary>Docs &amp; Learning <span>19 links</span></summary><div class="projects"><article class="project resource-card" data-category="Docs &amp; Learning" data-search="devdocs — html fast, offline-capable html reference. docs &amp; learning frontend"><div class="project-top"><small>Docs &amp; Learning</small><h3>DevDocs — HTML</h3></div><p>Fast, offline-capable HTML reference.</p><p class="link-roles">Frontend</p><a href="https://devdocs.io/html" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="devdocs — js fast, offline-capable javascript reference. docs &amp; learning frontend"><div class="project-top"><small>Docs &amp; Learning</small><h3>DevDocs — JS</h3></div><p>Fast, offline-capable JavaScript reference.</p><p class="link-roles">Frontend</p><a href="https://devdocs.io/javascript" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="devdocs — css fast, offline-capable css reference. docs &amp; learning frontend"><div class="project-top"><small>Docs &amp; Learning</small><h3>DevDocs — CSS</h3></div><p>Fast, offline-capable CSS reference.</p><p class="link-roles">Frontend</p><a href="https://devdocs.io/css" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="mdn web docs the definitive web platform reference. docs &amp; learning frontend"><div class="project-top"><small>Docs &amp; Learning</small><h3>MDN Web Docs</h3></div><p>The definitive web platform reference.</p><p class="link-roles">Frontend</p><a href="https://developer.mozilla.org/en-US" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="python tutor step through code execution line by line, visually. docs &amp; learning backend · data"><div class="project-top"><small>Docs &amp; Learning</small><h3>Python Tutor</h3></div><p>Step through code execution line by line, visually.</p><p class="link-roles">Backend · Data</p><a href="https://pythontutor.com/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="es6 compatibility which browsers actually support which es6+ features. docs &amp; learning frontend"><div class="project-top"><small>Docs &amp; Learning</small><h3>ES6 Compatibility</h3></div><p>Which browsers actually support which ES6+ features.</p><p class="link-roles">Frontend</p><a href="https://compat-table.github.io/compat-table/es6/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="w3c validator check a page’s markup for errors. docs &amp; learning frontend · qa &amp; testing"><div class="project-top"><small>Docs &amp; Learning</small><h3>W3C Validator</h3></div><p>Check a page’s markup for errors.</p><p class="link-roles">Frontend · QA &amp; Testing</p><a href="https://validator.w3.org" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="html cheat sheet quick-reference tag list. docs &amp; learning frontend"><div class="project-top"><small>Docs &amp; Learning</small><h3>HTML Cheat Sheet</h3></div><p>Quick-reference tag list.</p><p class="link-roles">Frontend</p><a href="https://htmlcheatsheet.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="w3schools beginner-friendly tutorials with live try-it editors. docs &amp; learning frontend · full-stack"><div class="project-top"><small>Docs &amp; Learning</small><h3>W3Schools</h3></div><p>Beginner-friendly tutorials with live try-it editors.</p><p class="link-roles">Frontend · Full-Stack</p><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="node.js official docs and release notes. docs &amp; learning backend"><div class="project-top"><small>Docs &amp; Learning</small><h3>Node.js</h3></div><p>Official docs and release notes.</p><p class="link-roles">Backend</p><a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="node.js downloads installers for every platform and version. docs &amp; learning backend"><div class="project-top"><small>Docs &amp; Learning</small><h3>Node.js Downloads</h3></div><p>Installers for every platform and version.</p><p class="link-roles">Backend</p><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="can i use browser support tables for any css or js feature before you ship it. docs &amp; learning frontend · qa &amp; testing"><div class="project-top"><small>Suggested resource</small><h3>Can I Use</h3></div><p>Browser support tables for any CSS or JS feature before you ship it.</p><p class="link-roles">Frontend · QA &amp; Testing</p><a href="https://caniuse.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="freecodecamp free structured curriculum and practice projects. docs &amp; learning full-stack"><div class="project-top"><small>Suggested resource</small><h3>freeCodeCamp</h3></div><p>Free structured curriculum and practice projects.</p><p class="link-roles">Full-Stack</p><a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="stack overflow the default place to search when an error message makes no sense — someone has almost always hit it first. docs &amp; learning full-stack"><div class="project-top"><small>Suggested resource</small><h3>Stack Overflow</h3></div><p>The default place to search when an error message makes no sense — someone has almost always hit it first.</p><p class="link-roles">Full-Stack</p><a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="the odin project free full-stack curriculum, project-based, that takes you from zero to a portfolio. docs &amp; learning full-stack"><div class="project-top"><small>Suggested resource</small><h3>The Odin Project</h3></div><p>Free full-stack curriculum, project-based, that takes you from zero to a portfolio.</p><p class="link-roles">Full-Stack</p><a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="cs50 harvard’s free intro-to-computer-science course — the fundamentals under everything else here. docs &amp; learning full-stack"><div class="project-top"><small>Suggested resource</small><h3>CS50</h3></div><p>Harvard’s free intro-to-computer-science course — the fundamentals under everything else here.</p><p class="link-roles">Full-Stack</p><a href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="leetcode free coding-problem practice for the technical interviews every role above eventually faces. docs &amp; learning full-stack"><div class="project-top"><small>Suggested resource</small><h3>LeetCode</h3></div><p>Free coding-problem practice for the technical interviews every role above eventually faces.</p><p class="link-roles">Full-Stack</p><a href="https://leetcode.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="frontend mentor real design files to build from, free tier included — practice matching a mockup pixel-for-pixel. docs &amp; learning frontend"><div class="project-top"><small>Suggested resource</small><h3>Frontend Mentor</h3></div><p>Real design files to build from, free tier included — practice matching a mockup pixel-for-pixel.</p><p class="link-roles">Frontend</p><a href="https://www.frontendmentor.io" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Docs &amp; Learning" data-search="exercism free coding exercises with real mentor feedback, across dozens of languages. docs &amp; learning full-stack"><div class="project-top"><small>Suggested resource</small><h3>Exercism</h3></div><p>Free coding exercises with real mentor feedback, across dozens of languages.</p><p class="link-roles">Full-Stack</p><a href="https://exercism.org" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Code Editors &amp; Sandboxes"><summary>Code Editors &amp; Sandboxes <span>13 links</span></summary><div class="projects"><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="codesandbox your recent in-browser sandboxes. code editors &amp; sandboxes frontend · full-stack"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>CodeSandbox</h3></div><p>Your recent in-browser sandboxes.</p><p class="link-roles">Frontend · Full-Stack</p><a href="https://codesandbox.io/dashboard/recent" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="codesandbox learn guided lessons inside codesandbox. code editors &amp; sandboxes frontend · full-stack"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>CodeSandbox Learn</h3></div><p>Guided lessons inside CodeSandbox.</p><p class="link-roles">Frontend · Full-Stack</p><a href="https://codesandbox.io/docs/learn" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="codesandbox sdk programmatic sandbox creation for your own tools. code editors &amp; sandboxes full-stack · devops"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>CodeSandbox SDK</h3></div><p>Programmatic sandbox creation for your own tools.</p><p class="link-roles">Full-Stack · DevOps</p><a href="https://codesandbox.io/docs/sdk" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="vscode.dev full vs code, running entirely in the browser. code editors &amp; sandboxes full-stack"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>VSCode.dev</h3></div><p>Full VS Code, running entirely in the browser.</p><p class="link-roles">Full-Stack</p><a href="https://vscode.dev" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="dillinger live-preview markdown editor. code editors &amp; sandboxes frontend"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>Dillinger</h3></div><p>Live-preview Markdown editor.</p><p class="link-roles">Frontend</p><a href="https://dillinger.io" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="sandpack (github) the component-sandbox library behind codesandbox’s embeds. code editors &amp; sandboxes frontend"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>Sandpack (GitHub)</h3></div><p>The component-sandbox library behind CodeSandbox’s embeds.</p><p class="link-roles">Frontend</p><a href="https://github.com/Sandpack" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="codepen — example 1 saved reference pen. code editors &amp; sandboxes frontend"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>CodePen — Example 1</h3></div><p>Saved reference pen.</p><p class="link-roles">Frontend</p><a href="https://codepen.io/zsolt555/pen/PoaEYpL" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="codepen — example 2 saved reference pen. code editors &amp; sandboxes frontend"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>CodePen — Example 2</h3></div><p>Saved reference pen.</p><p class="link-roles">Frontend</p><a href="https://codepen.io/zsolt555/pen/OJLajgG" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="codepen — example 3 saved reference pen. code editors &amp; sandboxes frontend"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>CodePen — Example 3</h3></div><p>Saved reference pen.</p><p class="link-roles">Frontend</p><a href="https://codepen.io/zsolt555/pen/orePqg" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="tabnine ai code-completion plugin for your editor. code editors &amp; sandboxes full-stack"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>TabNine</h3></div><p>AI code-completion plugin for your editor.</p><p class="link-roles">Full-Stack</p><a href="https://www.tabnine.com/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="eclipse downloads the eclipse java ide installers. code editors &amp; sandboxes backend"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>Eclipse Downloads</h3></div><p>The Eclipse Java IDE installers.</p><p class="link-roles">Backend</p><a href="https://www.eclipse.org/downloads" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="adoptium (windows) free openjdk builds for windows. code editors &amp; sandboxes backend"><div class="project-top"><small>Code Editors &amp; Sandboxes</small><h3>Adoptium (Windows)</h3></div><p>Free OpenJDK builds for Windows.</p><p class="link-roles">Backend</p><a href="https://adoptium.net/installation/archives#windows" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Code Editors &amp; Sandboxes" data-search="replit browser ide, good for quick full-stack prototypes with a backend. code editors &amp; sandboxes full-stack"><div class="project-top"><small>Suggested resource</small><h3>Replit</h3></div><p>Browser IDE, good for quick full-stack prototypes with a backend.</p><p class="link-roles">Full-Stack</p><a href="https://replit.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="API &amp; Testing Tools"><summary>API &amp; Testing Tools <span>5 links</span></summary><div class="projects"><article class="project resource-card" data-category="API &amp; Testing Tools" data-search="postman test your own api routes (like /api/chat) without building a frontend first. api &amp; testing tools backend · qa &amp; testing"><div class="project-top"><small>Suggested resource</small><h3>Postman</h3></div><p>Test your own API routes (like /api/chat) without building a frontend first.</p><p class="link-roles">Backend · QA &amp; Testing</p><a href="https://www.postman.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="API &amp; Testing Tools" data-search="insomnia free rest and graphql api client — a lighter alternative to postman. api &amp; testing tools backend · qa &amp; testing"><div class="project-top"><small>Suggested resource</small><h3>Insomnia</h3></div><p>Free REST and GraphQL API client — a lighter alternative to Postman.</p><p class="link-roles">Backend · QA &amp; Testing</p><a href="https://insomnia.rest" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="API &amp; Testing Tools" data-search="swagger editor design and document your own apis in the openapi format. api &amp; testing tools backend · qa &amp; testing"><div class="project-top"><small>Suggested resource</small><h3>Swagger Editor</h3></div><p>Design and document your own APIs in the OpenAPI format.</p><p class="link-roles">Backend · QA &amp; Testing</p><a href="https://editor.swagger.io" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="API &amp; Testing Tools" data-search="jsonplaceholder free fake rest api for testing frontend code before your real backend exists. api &amp; testing tools frontend · qa &amp; testing"><div class="project-top"><small>Suggested resource</small><h3>JSONPlaceholder</h3></div><p>Free fake REST API for testing frontend code before your real backend exists.</p><p class="link-roles">Frontend · QA &amp; Testing</p><a href="https://jsonplaceholder.typicode.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="API &amp; Testing Tools" data-search="rapidapi hub marketplace of free and paid public apis you can plug straight into a project. api &amp; testing tools backend · full-stack"><div class="project-top"><small>Suggested resource</small><h3>RapidAPI Hub</h3></div><p>Marketplace of free and paid public APIs you can plug straight into a project.</p><p class="link-roles">Backend · Full-Stack</p><a href="https://rapidapi.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Version Control &amp; CI/CD"><summary>Version Control &amp; CI/CD <span>4 links</span></summary><div class="projects"><article class="project resource-card" data-category="Version Control &amp; CI/CD" data-search="github actions free automated testing and deployment pipelines, built into github. version control &amp; ci/cd devops"><div class="project-top"><small>Suggested resource</small><h3>GitHub Actions</h3></div><p>Free automated testing and deployment pipelines, built into GitHub.</p><p class="link-roles">DevOps</p><a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Version Control &amp; CI/CD" data-search="gitlab github alternative with source control and ci/cd pipelines in one place. version control &amp; ci/cd devops · backend"><div class="project-top"><small>Suggested resource</small><h3>GitLab</h3></div><p>GitHub alternative with source control and CI/CD pipelines in one place.</p><p class="link-roles">DevOps · Backend</p><a href="https://gitlab.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Version Control &amp; CI/CD" data-search="circleci free-tier ci/cd pipelines for building, testing, and deploying automatically. version control &amp; ci/cd devops"><div class="project-top"><small>Suggested resource</small><h3>CircleCI</h3></div><p>Free-tier CI/CD pipelines for building, testing, and deploying automatically.</p><p class="link-roles">DevOps</p><a href="https://circleci.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Version Control &amp; CI/CD" data-search="github desktop a visual git app — commit, push, and pull without memorizing commands. version control &amp; ci/cd full-stack · devops"><div class="project-top"><small>Suggested resource</small><h3>GitHub Desktop</h3></div><p>A visual git app — commit, push, and pull without memorizing commands.</p><p class="link-roles">Full-Stack · DevOps</p><a href="https://desktop.github.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Databases &amp; Backend"><summary>Databases &amp; Backend <span>4 links</span></summary><div class="projects"><article class="project resource-card" data-category="Databases &amp; Backend" data-search="mongodb atlas free-tier hosted nosql database — a common supabase/postgres alternative. databases &amp; backend backend · data"><div class="project-top"><small>Suggested resource</small><h3>MongoDB Atlas</h3></div><p>Free-tier hosted NoSQL database — a common Supabase/Postgres alternative.</p><p class="link-roles">Backend · Data</p><a href="https://www.mongodb.com/cloud/atlas" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Databases &amp; Backend" data-search="neon free serverless postgres that spins down when idle, so it never costs when unused. databases &amp; backend backend · data"><div class="project-top"><small>Suggested resource</small><h3>Neon</h3></div><p>Free serverless Postgres that spins down when idle, so it never costs when unused.</p><p class="link-roles">Backend · Data</p><a href="https://neon.tech" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Databases &amp; Backend" data-search="planetscale mysql-compatible serverless database platform with a free tier. databases &amp; backend backend · data"><div class="project-top"><small>Suggested resource</small><h3>PlanetScale</h3></div><p>MySQL-compatible serverless database platform with a free tier.</p><p class="link-roles">Backend · Data</p><a href="https://planetscale.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Databases &amp; Backend" data-search="railway free-tier hosting for backends and databases together, an alternative to render. databases &amp; backend devops · backend"><div class="project-top"><small>Suggested resource</small><h3>Railway</h3></div><p>Free-tier hosting for backends and databases together, an alternative to Render.</p><p class="link-roles">DevOps · Backend</p><a href="https://railway.app" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Mobile Dev"><summary>Mobile Dev <span>7 links</span></summary><div class="projects"><article class="project resource-card" data-category="Mobile Dev" data-search="flutter google’s cross-platform ui toolkit. mobile dev mobile"><div class="project-top"><small>Mobile Dev</small><h3>Flutter</h3></div><p>Google’s cross-platform UI toolkit.</p><p class="link-roles">Mobile</p><a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Mobile Dev" data-search="react native build native mobile apps with react. mobile dev mobile"><div class="project-top"><small>Mobile Dev</small><h3>React Native</h3></div><p>Build native mobile apps with React.</p><p class="link-roles">Mobile</p><a href="https://reactnative.dev" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Mobile Dev" data-search="expo the managed workflow and dashboard for react native. mobile dev mobile"><div class="project-top"><small>Mobile Dev</small><h3>Expo</h3></div><p>The managed workflow and dashboard for React Native.</p><p class="link-roles">Mobile</p><a href="https://expo.dev" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Mobile Dev" data-search="expo documentation guides and api reference. mobile dev mobile"><div class="project-top"><small>Mobile Dev</small><h3>Expo Documentation</h3></div><p>Guides and API reference.</p><p class="link-roles">Mobile</p><a href="https://docs.expo.dev" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Mobile Dev" data-search="expo (github) source code for the expo sdk. mobile dev mobile"><div class="project-top"><small>Mobile Dev</small><h3>Expo (GitHub)</h3></div><p>Source code for the Expo SDK.</p><p class="link-roles">Mobile</p><a href="https://github.com/expo/expo" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Mobile Dev" data-search="expo build services cloud builds for ios and android, no local toolchain needed. mobile dev mobile · devops"><div class="project-top"><small>Mobile Dev</small><h3>Expo Build Services</h3></div><p>Cloud builds for iOS and Android, no local toolchain needed.</p><p class="link-roles">Mobile · DevOps</p><a href="https://expo.dev/services#build" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Mobile Dev" data-search="expo snack in-browser expo playground — test react native snippets with zero setup. mobile dev mobile"><div class="project-top"><small>Suggested resource</small><h3>Expo Snack</h3></div><p>In-browser Expo playground — test React Native snippets with zero setup.</p><p class="link-roles">Mobile</p><a href="https://snack.expo.dev" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Design &amp; Assets"><summary>Design &amp; Assets <span>6 links</span></summary><div class="projects"><article class="project resource-card" data-category="Design &amp; Assets" data-search="figma interface design and prototyping. design &amp; assets frontend"><div class="project-top"><small>Design &amp; Assets</small><h3>Figma</h3></div><p>Interface design and prototyping.</p><p class="link-roles">Frontend</p><a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Design &amp; Assets" data-search="canva fast graphics and social-media assets. design &amp; assets frontend"><div class="project-top"><small>Design &amp; Assets</small><h3>Canva</h3></div><p>Fast graphics and social-media assets.</p><p class="link-roles">Frontend</p><a href="https://www.canva.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Design &amp; Assets" data-search="istockphoto licensed stock photography — paid, unlike the free options in this row. design &amp; assets frontend"><div class="project-top"><small>Design &amp; Assets</small><h3>iStockPhoto</h3></div><p>Licensed stock photography — paid, unlike the free options in this row.</p><p class="link-roles">Frontend</p><a href="https://www.istockphoto.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Design &amp; Assets" data-search="diagrams.net free flowcharts and architecture diagrams. design &amp; assets full-stack · devops"><div class="project-top"><small>Design &amp; Assets</small><h3>Diagrams.net</h3></div><p>Free flowcharts and architecture diagrams.</p><p class="link-roles">Full-Stack · DevOps</p><a href="https://app.diagrams.net/" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Design &amp; Assets" data-search="unsplash free stock photography — a no-cost complement to istockphoto. design &amp; assets frontend"><div class="project-top"><small>Suggested resource</small><h3>Unsplash</h3></div><p>Free stock photography — a no-cost complement to iStockPhoto.</p><p class="link-roles">Frontend</p><a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Design &amp; Assets" data-search="coolors generate and lock in color palettes fast. design &amp; assets frontend"><div class="project-top"><small>Suggested resource</small><h3>Coolors</h3></div><p>Generate and lock in color palettes fast.</p><p class="link-roles">Frontend</p><a href="https://coolors.co" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Project Management &amp; Comms"><summary>Project Management &amp; Comms <span>4 links</span></summary><div class="projects"><article class="project resource-card" data-category="Project Management &amp; Comms" data-search="trello free kanban boards for tracking tasks on a project, solo or with others. project management &amp; comms "><div class="project-top"><small>Suggested resource</small><h3>Trello</h3></div><p>Free kanban boards for tracking tasks on a project, solo or with others.</p><a href="https://trello.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Project Management &amp; Comms" data-search="notion free notes, docs, and project trackers in one flexible workspace. project management &amp; comms "><div class="project-top"><small>Suggested resource</small><h3>Notion</h3></div><p>Free notes, docs, and project trackers in one flexible workspace.</p><a href="https://www.notion.so" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Project Management &amp; Comms" data-search="linear fast, clean issue tracker popular with small dev teams. project management &amp; comms "><div class="project-top"><small>Suggested resource</small><h3>Linear</h3></div><p>Fast, clean issue tracker popular with small dev teams.</p><a href="https://linear.app" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Project Management &amp; Comms" data-search="slack team chat — free tier is plenty for a small project or side team. project management &amp; comms "><div class="project-top"><small>Suggested resource</small><h3>Slack</h3></div><p>Team chat — free tier is plenty for a small project or side team.</p><a href="https://slack.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><details class="resource-group" data-group="Monitoring &amp; DevOps"><summary>Monitoring &amp; DevOps <span>6 links</span></summary><div class="projects"><article class="project resource-card" data-category="Monitoring &amp; DevOps" data-search="sentry free-tier error tracking that tells you the moment a live app breaks. monitoring &amp; devops devops · sre · qa &amp; testing"><div class="project-top"><small>Suggested resource</small><h3>Sentry</h3></div><p>Free-tier error tracking that tells you the moment a live app breaks.</p><p class="link-roles">DevOps · SRE · QA &amp; Testing</p><a href="https://sentry.io" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Monitoring &amp; DevOps" data-search="uptimerobot free uptime monitoring — get alerted the moment a site goes down. monitoring &amp; devops sre · devops"><div class="project-top"><small>Suggested resource</small><h3>UptimeRobot</h3></div><p>Free uptime monitoring — get alerted the moment a site goes down.</p><p class="link-roles">SRE · DevOps</p><a href="https://uptimerobot.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Monitoring &amp; DevOps" data-search="pagespeed insights free google performance audit for any url, with concrete fixes. monitoring &amp; devops frontend · qa &amp; testing"><div class="project-top"><small>Suggested resource</small><h3>PageSpeed Insights</h3></div><p>Free Google performance audit for any URL, with concrete fixes.</p><p class="link-roles">Frontend · QA &amp; Testing</p><a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Monitoring &amp; DevOps" data-search="logrocket session replay plus error tracking, free tier, to see exactly what a user did before a bug. monitoring &amp; devops frontend · qa &amp; testing · sre"><div class="project-top"><small>Suggested resource</small><h3>LogRocket</h3></div><p>Session replay plus error tracking, free tier, to see exactly what a user did before a bug.</p><p class="link-roles">Frontend · QA &amp; Testing · SRE</p><a href="https://logrocket.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Monitoring &amp; DevOps" data-search="grafana cloud free-tier dashboards and alerting for metrics, logs, and uptime across your services. monitoring &amp; devops sre · devops"><div class="project-top"><small>Suggested resource</small><h3>Grafana Cloud</h3></div><p>Free-tier dashboards and alerting for metrics, logs, and uptime across your services.</p><p class="link-roles">SRE · DevOps</p><a href="https://grafana.com" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article><article class="project resource-card" data-category="Monitoring &amp; DevOps" data-search="snyk free-tier dependency and code vulnerability scanning — catches security holes before they ship. monitoring &amp; devops security"><div class="project-top"><small>Suggested resource</small><h3>Snyk</h3></div><p>Free-tier dependency and code vulnerability scanning — catches security holes before they ship.</p><p class="link-roles">Security</p><a href="https://snyk.io" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article></div></details><p id="resourceEmpty" hidden>No resources match your filters.</p></div></section><section class="section" id="learning"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Continued learning</div><h2>Engineering learning paths</h2></div><p>Ten role-based roadmap and video links from my LinkDeck collection.</p></div><div class="projects"><article class="project"><div class="project-top"><small>Learning path</small><h3>Frontend</h3></div><div class="resource-actions"><a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=hJRR2Vx6pDk" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>Backend</h3></div><div class="resource-actions"><a href="https://roadmap.sh/backend" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=OeEHJgzqS1k" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>Full-Stack</h3></div><div class="resource-actions"><a href="https://roadmap.sh/full-stack" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=ZoD56SNZOBs" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>Mobile</h3></div><div class="resource-actions"><a href="https://roadmap.sh/android" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=Zxq0WQ-UBCo" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>DevOps</h3></div><div class="resource-actions"><a href="https://roadmap.sh/devops" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=WcOl-0Mn-Ws" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>QA &amp; Testing</h3></div><div class="resource-actions"><a href="https://roadmap.sh/qa" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=RZw3u29NzXM" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>Data</h3></div><div class="resource-actions"><a href="https://roadmap.sh/data-engineer" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=71JLTDONK00" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>ML/AI</h3></div><div class="resource-actions"><a href="https://roadmap.sh/ai-engineer" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=uRGEEULzzik" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>Security</h3></div><div class="resource-actions"><a href="https://roadmap.sh/cyber-security" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=aSMwQXcj6x4" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article><article class="project"><div class="project-top"><small>Learning path</small><h3>SRE</h3></div><div class="resource-actions"><a href="https://roadmap.sh/devops" target="_blank" rel="noopener noreferrer">Explore roadmap ↗</a><a href="https://www.youtube.com/watch?v=nPx3Qk-J_FA" target="_blank" rel="noopener noreferrer">Watch linked guide ↗</a></div></article></div></div></section>
-<section class="section" id="education"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Education & Credentials</div><h2>Technical foundation</h2></div></div><div class="edu"><div class="panel"><h3>Associate of Applied Science (A.A.S.) in Electronic Engineering</h3><p>Bronx Community College · Bronx, New York</p></div><div class="panel"><h3>Software Engineering Training</h3><p>Hofstra / QuickStart bootcamp coursework and hands-on developer practice.</p><a href="https://hofstra.quickstart.com/my-dashboard/#/bootcamp" target="_blank" rel="noopener">Open LMS ↗</a></div></div><div class="credentials" style="margin-top:18px"><div class="credential"><h3>AI Prompting & Developer Workflow</h3><p>QuickStart · July 21, 2026 · 6 hours</p></div><div class="credential"><h3>OSHA Safety Training</h3><p>Construction and field safety compliance.</p></div><div class="credential"><h3>NYS Driver's License</h3><p>Valid New York State credential.</p></div></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="eyebrow">Contact</div><h2>Software engineering opportunities</h2><div class="contact"><a class="btn primary" href="mailto:Bxz_khan99@yahoo.com">Email Me</a><a class="btn" href="tel:+13478359983">Call 347-835-9983</a><a class="btn" href="https://gim1203-hue.github.io/liverepo/" target="_blank" rel="noopener">Current Portfolio ↗</a></div></div></section>
-<footer class="footer"><div class="wrap">Preview A · Executive Tech · Muhammad Imran Khan</div></footer>
-<div class="modal" id="modal"><div class="modalbox"><div class="modalhead"><b>Professional Resume</b><div><button class="btn" onclick="window.print()">Print / Save PDF</button> <button class="btn" id="close" type="button" aria-label="Close resume">Close</button></div></div><div class="paper"><h1>Muhammad Imran Khan</h1><h3>Junior Software Engineer | Cement Mason | Project & Operations Professional</h3><p>Bronx, New York · 347-835-9983 · Bxz_khan99@yahoo.com · muhammad.khan@parks.nyc.gov · github.com/gim1203-hue</p><h2>PROFILE</h2><p>Junior Software Engineer developing practical web applications with HTML, CSS, JavaScript, Git/GitHub and responsive front-end techniques. Current/most recent skilled-trade work as a Cement Mason with NYC Parks demonstrates precision, safety, infrastructure responsibility and hands-on problem solving. More than two decades of construction project-management experience adds planning, leadership, budgeting, vendor coordination and ownership.</p><h2>TECHNICAL SKILLS</h2><p>HTML5 · CSS3 · JavaScript · DOM · Responsive Web Design · Git · GitHub · VS Code · Debugging · REST API Fundamentals · AI-Assisted Developer Workflow</p><h2>EXPERIENCE</h2><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>Seasonal Cement Mason — Current / Most Recent Skilled-Trade Role</strong></span><time>2026</time></summary><ul><li>Prepare, mix, place, screed, float and finish cement and concrete to specified grade, contour and surface requirements.</li><li>Build, align and remove forms; place concrete for sidewalks, pavements, floors, foundations and retaining-wall work.</li><li>Repair deteriorated, cracked and spalled concrete; perform patching and restoration of public-facing infrastructure.</li><li>Estimate job needs and help prepare material requisitions; protect tools, equipment, work zones, coworkers and the public.</li><li>Maintain work records and reports; coordinate with crews and supervisors; support safe, orderly job-site operations.</li><li>Use hand and power tools associated with concrete preparation, placement, demolition, edging and finishing.</li></ul></details><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>Maintenance Worker</strong></span><time>2019–2026 assignments</time></summary><ul><li>Perform building and facility maintenance and minor repairs involving masonry, woodwork, flooring, walls, hardware and equipment.</li><li>Support minor electrical, plumbing and heating-system maintenance; inspect conditions and identify repair needs.</li><li>Maintain service records, work documentation and reports; respond to assigned work orders and facility needs.</li><li>Operate vehicles between work locations and transport tools, materials and equipment.</li><li>Support special events, seasonal operations and emergency maintenance; keep work areas safe, clean and serviceable.</li></ul></details><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>Associate Park Service Worker (APSW)</strong></span><time>2017–2018 / Parks assignments</time></summary><ul><li>Operate trucks, trailers and motorized field equipment safely; inspect and maintain tools, vehicles and equipment.</li><li>Perform construction, demolition, concrete mixing/spreading, grounds and facility repair, landscape and public-space maintenance.</li><li>Track projects, work orders, assignments, timesheets and supplies; document completed work accurately.</li><li>Supervise or guide assigned personnel when required and inspect work for quality, timeliness and agency standards.</li><li>Respond with crews to snowstorms, emergencies and citywide operational needs.</li></ul></details><details class="job" open><summary><span><b>NYC Parks &amp; Recreation</b><strong>City Park Worker (CPW)</strong></span><time>2016–2021 assignments</time></summary><ul><li>Maintain parks, playgrounds, grounds and facilities through cleaning, landscaping, snow removal and seasonal operations.</li><li>Perform minor masonry, plumbing, electrical, painting, carpentry, metal and equipment repairs as assigned.</li><li>Drive agency vehicles and operate motorized equipment; perform safety checks on facilities, tools and equipment.</li><li>Prepare pools, courts and public spaces; sweep and remove litter and maintain public restrooms and other facilities.</li><li>Move materials and equipment and perform physically demanding outdoor work in changing weather conditions.</li></ul></details><details class="job" open><summary><span><b>NYC Department of Transportation</b><strong>Assistant City Highway Repairer</strong></span><time>2017–2018</time></summary><ul><li>Assist with repair of curbs, sidewalks, roadway pavement, manhole edges and defective patches.</li><li>Carry cement, sand and stone; mix and place concrete and asphalt; prepare defective areas for patching.</li><li>Assist with foundation work, shoring and sheeting, masonry/forms, loading and unloading construction materials.</li><li>Operate or assist with portable/towed power equipment; care for tools and support vehicle inspections and maintenance.</li><li>Clean construction sites, remove debris, perform snow operations and help direct traffic safely around work zones.</li></ul></details><details class="job" open><summary><span><b>New Prime Construction Corporation</b><strong>Project Manager</strong></span><time>June 2001–Present</time></summary><ul><li>Plan and coordinate construction projects from scope definition and estimating through execution, closeout and client handoff.</li><li>Build schedules, track milestones, coordinate subcontractors and trades, and resolve field issues before they affect delivery.</li><li>Manage budgets, cost estimates, bids, change considerations, material procurement, equipment needs and vendor relationships.</li><li>Coordinate clients, field crews, suppliers and outside professionals; communicate progress, constraints and next actions.</li><li>Maintain project documentation and support quality, code, safety and site requirements.</li><li>Balance multiple priorities, resources and deadlines while maintaining accountability for project outcomes.</li></ul></details><details class="job" open><summary><span><b>Mosholu Montefiore Community Center / Child Development Center</b><strong>Night Supervisor</strong></span><time>June 2024–January 2025</time></summary><ul><li>Supervised evening operations, staff coverage, scheduling, building security, cleanliness and safe facility use.</li><li>Coordinated on-site logistics and responded to operational issues to keep programs and facilities running smoothly.</li><li>Monitored completion of assigned duties and communicated needs, incidents and handoffs to appropriate staff.</li><li>Supported a professional, orderly environment for community and child-development activities.</li></ul></details><h2>EDUCATION</h2><p><b>Associate of Applied Science (A.A.S.) — Electronic Engineering</b><br>Bronx Community College, Bronx, NY</p><h2>CREDENTIALS</h2><p>AI Prompting & Developer Workflow — QuickStart · OSHA Safety Training / Safety Compliance · Valid New York State Driver's License</p></div></div></div>
-<script src="script.js"></script>
-</body></html>
+<!-- FULL STACK -->
+<section id="fullstack">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How I Build</p>
+      <h2>Full stack, explained</h2>
+      <p>A full-stack app has layers that work together. Here is what each layer does, and how I built it in my Khanu Learning capstone.</p>
+    </div>
+
+    <div class="flow" role="img" aria-label="User's browser running React sends requests to a Node.js and Express API, which reads and writes MongoDB and calls Google Gemini">
+      <div class="node"><b>Front end</b><span>React + Vite</span><small>What the user sees and clicks</small></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="node"><b>Back end</b><span>Node.js + Express</span><small>REST API, rules and security</small></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="node"><b>Database</b><span>MongoDB + Mongoose</span><small>Users, services, bookings</small></div>
+      <div class="arrow" aria-hidden="true">+</div>
+      <div class="node"><b>AI service</b><span>Google Gemini</span><small>Explains recommendations</small></div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card layer"><h3><span class="num">1</span>Front end (client)</h3>
+        <p>The part that runs in the browser: layout, buttons, forms and screens. It sends requests to the back end and shows the results.</p>
+        <ul><li>HTML for structure, CSS for design, JavaScript for behavior</li><li>React components and state; React Router for pages</li><li>Responsive design for phones, tablets and desktops</li></ul>
+        <p class="ex">In Khanu: searchable services, category filters, booking screens, light/dark theme and an animated study buddy.</p></div>
+      <div class="card layer"><h3><span class="num">2</span>Back end (server)</h3>
+        <p>The program on the server that receives requests, checks them, applies the business rules and talks to the database.</p>
+        <ul><li>Node.js runs JavaScript on the server</li><li>Express defines REST API routes (GET, POST, DELETE)</li><li>Validation stops bad or missing data</li></ul>
+        <p class="ex">In Khanu: APIs for registration, login, recommendations and bookings.</p></div>
+      <div class="card layer"><h3><span class="num">3</span>Database</h3>
+        <p>Where data is saved permanently, so it is still there after a refresh or on another device.</p>
+        <ul><li>MongoDB stores data as documents</li><li>Mongoose defines models and how they connect</li><li>Create, read, update and delete (CRUD) operations</li></ul>
+        <p class="ex">In Khanu: connected user, service and booking models; users create, review and cancel their own sessions.</p></div>
+      <div class="card layer"><h3><span class="num">4</span>Authentication &amp; security</h3>
+        <p>Making sure people are who they say they are, and can only touch their own data.</p>
+        <ul><li>bcrypt hashes passwords (never stored as plain text)</li><li>JWT tokens keep users logged in</li><li>Ownership checks protect each account; API keys stay in environment variables, never in public code</li></ul>
+        <p class="ex">In Khanu: live checks confirm one user cannot see or cancel another user's bookings.</p></div>
+      <div class="card layer"><h3><span class="num">5</span>APIs &amp; AI integration</h3>
+        <p>Connecting to outside services to add data and smart features.</p>
+        <ul><li>REST APIs with fetch and async/await</li><li>Google Gemini, OpenAI and the browser's Web Speech API</li><li>Retries and fallbacks when a service is down</li></ul>
+        <p class="ex">In Khanu: catalog scoring ranks sessions, then Gemini explains the best match; a labeled fallback keeps the app usable.</p></div>
+      <div class="card layer"><h3><span class="num">6</span>Deployment, domains &amp; testing</h3>
+        <p>Getting the app onto the internet and making sure it keeps working.</p>
+        <ul><li>Git and GitHub for version control</li><li>Render, Vercel, GitHub Pages and Cloudflare Workers for hosting</li><li>Custom domains and DNS; automated and live testing</li></ul>
+        <p class="ex">In Khanu: deployed on Render plus a GitHub Pages front end, with 15 passing automated tests.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Technical Skills</p>
+      <h2>What I bring to a software team</h2>
+      <p>Every skill below is backed by a completed QuickStart certification or a live project on this page.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card skill-card"><h3>Front End</h3><p>Responsive, accessible interfaces.</p>
+        <ul><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>React</li><li>Vite</li><li>React Router</li><li>Motion (animations)</li><li>DOM Manipulation</li><li>Responsive Design</li><li>Interactive UI</li></ul></div>
+      <div class="card skill-card"><h3>Back End &amp; APIs</h3><p>Servers, routes and third-party data.</p>
+        <ul><li>Node.js</li><li>Express</li><li>RESTful APIs</li><li>MongoDB</li><li>Mongoose</li><li>JWT Authentication</li><li>bcrypt Password Hashing</li><li>Async JavaScript (fetch, async/await)</li><li>JSON</li><li>API Integration</li></ul></div>
+      <div class="card skill-card"><h3>Tools &amp; Deployment</h3><p>Shipping code to the live web.</p>
+        <ul><li>Git</li><li>GitHub</li><li>VS Code</li><li>GitHub Pages</li><li>Vercel</li><li>Render</li><li>Cloudflare Workers</li><li>Custom Domains &amp; DNS</li></ul></div>
+      <div class="card skill-card"><h3>Quality &amp; Process</h3><p>Working the way real teams work.</p>
+        <ul><li>Testing &amp; QA</li><li>Automated Testing</li><li>UI Testing</li><li>Debugging</li><li>Agile</li><li>Scrum</li><li>UX Principles</li><li>Software Design</li><li>Technical Documentation</li></ul></div>
+      <div class="card skill-card"><h3>AI Development</h3><p>Building with AI models and APIs.</p>
+        <ul><li>Gemini API</li><li>OpenAI API</li><li>Web Speech API (voice)</li><li>AI Chat &amp; Voice Apps</li><li>Prompt Engineering</li><li>AI-Assisted Workflow</li></ul></div>
+      <div class="card skill-card"><h3>Leadership</h3><p>Two decades running real projects.</p>
+        <ul><li>Project Planning</li><li>Scheduling</li><li>Budgeting</li><li>Procurement</li><li>Subcontractor Coordination</li><li>Site Logistics</li><li>Project Documentation</li><li>Team Supervision</li><li>Safety (OSHA)</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Software Portfolio</p>
+      <h2>Featured projects</h2>
+    </div>
+
+    <article class="feature">
+      <div>
+        <p class="eyebrow" style="font-size:.78rem">Full-Stack Capstone</p>
+        <h3>Khanu Learning — AI-Assisted Tutoring &amp; Booking</h3>
+        <p>A full-stack app that helps learners go from "I need help" to booking a suitable tutoring session based on their goal, subject, level and budget.</p>
+        <h4>The Problem</h4>
+        <p>Learners struggle to know which tutor fits their goal, level and budget, and then have to book and track sessions somewhere else.</p>
+        <h4>The Solution</h4>
+        <p>One app that searches a tutoring catalog, scores and ranks matching sessions, uses Google Gemini to explain why the top match fits, and handles accounts and bookings in the same place.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Mongoose</span><span class="tag">JWT</span><span class="tag">bcrypt</span><span class="tag">Google Gemini</span><span class="tag">Render</span><span class="tag">GitHub Pages</span></div>
+      </div>
+      <div>
+        <h4>What I Built</h4>
+        <ul>
+          <li><b>Frontend:</b> React and Vite interface with searchable services, category filters, service details, light/dark themes and an animated study buddy.</li>
+          <li><b>Backend:</b> Express REST APIs for registration, login, validation, recommendations and bookings, protected with password hashing, JWT authentication and ownership checks.</li>
+          <li><b>Database:</b> MongoDB and Mongoose models for users, services and bookings; users create future appointments, review their sessions and cancel their own bookings.</li>
+          <li><b>AI:</b> catalog scoring ranks sessions, then Gemini explains the top recommendation, with clearly labeled fallback results when the AI provider is unavailable.</li>
+          <li><b>Testing:</b> 15 passing automated tests, plus live checks of login, bookings, filtering and account isolation.</li>
+          <li><b>Deployment:</b> full app on Render plus an additional GitHub Pages frontend; secrets kept in environment variables, not in code.</li>
+        </ul>
+        <h4>Engineering Takeaway</h4>
+        <p>Connecting three application layers taught me to handle API failures, debug deployment settings, and document both verified features and remaining limitations.</p>
+        <div class="links" style="display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;font-weight:600">
+          <a href="https://khanu-learning.onrender.com/" target="_blank" rel="noopener">Live app ↗</a>
+          <a href="https://github.com/gim1203-hue/khanu-learning" target="_blank" rel="noopener">Source code ↗</a>
+        </div>
+        <p style="margin-top:8px;font-size:.82rem">Portfolio prototype with sample tutoring data. Hosted on a free server, so the first load can take up to a minute while it wakes up.</p>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div>
+        <p class="eyebrow" style="font-size:.78rem">Construction Technology</p>
+        <h3>New Prime General Construction — Company Website</h3>
+        <p>A modern, motion-driven website for a construction company, combining an industrial look with smooth page transitions and interactive elements.</p>
+        <h4>The Problem</h4>
+        <p>A construction business needs to show its services, past projects and process clearly, and make it easy for clients to ask for an estimate.</p>
+        <h4>The Solution</h4>
+        <p>A fast, responsive React site with service pages, a project portfolio, a clear six-step process and an estimate request form.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">React Router</span><span class="tag">Motion</span><span class="tag">Lucide React</span><span class="tag">CSS</span><span class="tag">Vercel</span><span class="tag">Custom Domain</span></div>
+      </div>
+      <div>
+        <h4>What's Inside</h4>
+        <ul>
+          <li>Construction-themed UI with blueprint-inspired design sections.</li>
+          <li>Motion-powered page transitions and tool animations.</li>
+          <li>Service pages for Foundation, Structural, Exterior and Interior work.</li>
+          <li>Project portfolio with individual project pages.</li>
+          <li>Six-step construction process, About page and estimate request form.</li>
+          <li>Fully responsive design with client-side routing; deployed on Vercel with a custom domain.</li>
+        </ul>
+        <h4>Engineering Takeaway</h4>
+        <p>This is where my two careers meet: I know what a construction client needs to see, and I can build it.</p>
+        <div class="links" style="display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;font-weight:600">
+          <a href="https://newprimeconstruction.com/" target="_blank" rel="noopener">Live site ↗</a>
+          <a href="https://gim1203-hue-mrusmanupdate-tau.vercel.app/" target="_blank" rel="noopener">Vercel build ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div>
+        <h3>WorldWave — Live Radio Worldwide</h3>
+        <p>A React web app for exploring and streaming live radio from around the world. Pick a country and play any station listed in the public Radio Browser API.</p>
+        <h4>The Problem</h4>
+        <p>Finding radio stations from other countries usually means jumping between many separate websites.</p>
+        <h4>The Solution</h4>
+        <p>One searchable interface that pulls station data from a public API and plays streams directly in the browser.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">REST API</span><span class="tag">Vercel</span><span class="tag">Git</span></div>
+      </div>
+      <div>
+        <h4>What I Did</h4>
+        <ul>
+          <li>Built the first version in plain HTML, CSS and JavaScript, published on GitHub Pages.</li>
+          <li>Rebuilt it in React with reusable components and state-driven UI.</li>
+          <li>Integrated the Radio Browser REST API to load countries and stations.</li>
+          <li>Added search, filtering and playback controls; tested in the live browser.</li>
+          <li>Deployed the React version on Vercel.</li>
+        </ul>
+        <h4>Engineering Takeaway</h4>
+        <p>Rebuilding a working app in a new framework taught me to separate data, state and UI — the same break-it-down, test-each-part habit I use on construction projects.</p>
+        <div class="links" style="display:flex;gap:16px;margin-top:16px;font-weight:600">
+          <a href="https://worldwave-react-beta.vercel.app/" target="_blank" rel="noopener">React version ↗</a>
+          <a href="https://gim1203-hue.github.io/my-radio/" target="_blank" rel="noopener">Original version ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="sec-head" style="margin-top:40px">
+      <h2>All projects</h2>
+      <p>Every link below was checked and is live.</p>
+    </div>
+    <div class="tools">
+      <input class="search" id="projSearch" type="search" placeholder="Search projects…" aria-label="Search projects">
+      <button class="chip on" data-filter="all" type="button">All</button>
+      <button class="chip" data-filter="ai" type="button">AI</button>
+      <button class="chip" data-filter="react" type="button">React</button>
+      <button class="chip" data-filter="js" type="button">JavaScript</button>
+      <button class="chip" data-filter="business" type="button">Business</button>
+      <span class="count" id="projCount"></span>
+    </div>
+    <div class="grid g3" id="projGrid"></div>
+    <p class="empty" id="projEmpty">No projects match that search.</p>
+  </div>
+</section>
+
+<!-- LINKEDIN POST -->
+<section id="linkedin">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">On LinkedIn</p>
+      <h2>Featured posts</h2>
+    </div>
+    <div class="li-grid">
+      <div>
+        <div class="li-frame"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7523696308956725248?collapsed=1" title="LinkedIn post by Muhammad Imran Khan" loading="lazy" allowfullscreen></iframe></div>
+        <p class="li-link"><a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7523696308956725248/" target="_blank" rel="noopener">View on LinkedIn ↗</a></p>
+      </div>
+      <div>
+        <div class="li-frame"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7524915645034008577?collapsed=1" title="LinkedIn post: 11 QuickStart courses completed" loading="lazy" allowfullscreen></iframe></div>
+        <p class="li-link"><a href="https://www.linkedin.com/posts/gimrankhan_softwaredevelopment-fullstackdevelopment-ugcPost-7524915645034008577-e3Wk/" target="_blank" rel="noopener">View on LinkedIn ↗</a></p>
+      </div>
+      <div>
+        <div class="li-frame"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7521727056494120960?collapsed=1" title="LinkedIn post: New Prime General Construction website" loading="lazy" allowfullscreen></iframe></div>
+        <p class="li-link"><a href="https://www.linkedin.com/posts/gimrankhan_react-vite-webdevelopment-ugcPost-7521727056494120960-p03K/" target="_blank" rel="noopener">View on LinkedIn ↗</a></p>
+      </div>
+    </div>
+    <p class="li-link"><a href="https://www.linkedin.com/in/gimrankhan/" target="_blank" rel="noopener">See my full LinkedIn profile ↗</a></p>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Certifications</p>
+      <h2>11 QuickStart certificates · 74 hours</h2>
+      <p>Completed through the Hofstra University / QuickStart software engineering program, July–November 2026.</p>
+    </div>
+    <div class="grid g3" id="certGrid"></div>
+    <p class="verify">Certificates issued by QuickStart. To verify a certificate number, contact <a href="mailto:admin@quickstart.com">admin@quickstart.com</a>.</p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Work History</p>
+      <h2>Experience</h2>
+      <p>Click any role to see responsibilities.</p>
+    </div>
+    <div class="exp-tools">
+      <button class="btn" type="button" id="expandAll">Expand all</button>
+      <button class="btn" type="button" id="collapseAll">Collapse all</button>
+    </div>
+    <div id="jobList"></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Education</p>
+      <h2>Education &amp; credentials</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>Software Engineering Program</h3><p>Hofstra University / QuickStart · 2026 – Present</p><p style="margin-top:8px">Full-stack coursework: HTML, CSS, JavaScript, React, Node.js, Express, REST APIs, databases, testing and Agile.</p></div>
+      <div class="card"><h3>A.A.S. in Electronic Engineering</h3><p>Bronx Community College · Bronx, NY</p></div>
+      <div class="card"><h3>OSHA Safety Training</h3><p>Construction and field safety compliance.</p></div>
+      <div class="card"><h3>NYS Driver's License</h3><p>Valid New York State license.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-box">
+    <div class="sec-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Open to junior developer roles</h2>
+      <p style="margin:6px auto 0">Full-time, part-time, internship and apprenticeship opportunities in the New York City area or remote.</p>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="mailto:gimrankhan1203@gmail.com">Email Me</a>
+      <a class="btn" href="tel:+13478359983">Call 347-835-9983</a>
+      <a class="btn" href="https://github.com/gim1203-hue" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/gimrankhan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Muhammad Imran Khan · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</footer>
+
+<!-- CERTIFICATE LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate">
+  <img id="lbImg" alt="">
+  <p id="lbTitle"></p>
+  <button class="btn" type="button" id="lbClose">Close ✕</button>
+</div>
+
+<!-- RESUME MODAL -->
+<div class="modal" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume">
+  <div class="modal-bar">
+    <button class="btn primary" type="button" id="printResume">Print / Save PDF</button>
+    <button class="btn" type="button" id="closeResume">Close ✕</button>
+  </div>
+  <div class="resume">
+    <h1>Muhammad Imran Khan</h1>
+    <div class="r-title">Junior Software Engineer | Full-Stack Developer | Construction Technology</div>
+    <div class="r-contact">Bronx, NY · 347-835-9983 · <a href="mailto:gimrankhan1203@gmail.com">gimrankhan1203@gmail.com</a> · <a href="https://github.com/gim1203-hue">github.com/gim1203-hue</a> · <a href="https://www.linkedin.com/in/gimrankhan/">linkedin.com/in/gimrankhan</a> · <a href="https://gim1203-hue.github.io/liverepo/">gim1203-hue.github.io/liverepo</a></div>
+
+    <h2>Summary</h2>
+    <p>Junior Full-Stack Developer who builds and deploys web applications with JavaScript, React, Node.js, Express and REST APIs. Published 20 live web apps, including a full-stack React/Express/MongoDB capstone with 15 passing automated tests, and completed 11 software engineering certifications (74 hours) through the Hofstra University / QuickStart program in four months. Brings an A.A.S. in Electronic Engineering and 25 years of project management: planning, budgeting, vendor coordination and team leadership.</p>
+
+    <h2>Key Achievements</h2>
+    <ul>
+      <li>Published 20 live web applications across GitHub Pages, Vercel, Cloudflare Workers and Render, including sites on custom domains.</li>
+      <li>Integrated 5+ public APIs (Radio Browser, Gemini, OpenAI, Giphy and a weather API) into working browser applications.</li>
+      <li>Completed 11 QuickStart certifications (74 hours) between July and November 2026.</li>
+      <li>Managed construction projects for 25 years (2001–present) while serving 10 years with NYC agencies.</li>
+    </ul>
+
+    <h2>Core Competencies</h2>
+    <p>Full-Stack Web Development · Front-End Development · Back-End Development · RESTful APIs · API Integration · Responsive Web Design · Version Control · Authentication · Automated Testing · Software Testing · Quality Assurance · Agile / Scrum · UX Design Principles · Debugging · Technical Documentation · Construction Technology · Project Management · Budgeting · Procurement · Subcontractor Coordination · Team Leadership</p>
+
+    <h2>Technical Skills</h2>
+    <p><b>Languages &amp; Front End:</b> JavaScript (ES6+), HTML5, CSS3, React, Vite, React Router, Motion, DOM Manipulation, Responsive Design</p>
+    <p><b>Back End &amp; Data:</b> Node.js, Express, MongoDB, Mongoose, JWT Authentication, RESTful APIs, Async JavaScript (fetch, async/await), JSON, Database Fundamentals</p>
+    <p><b>Tools &amp; Deployment:</b> Git, GitHub, VS Code, GitHub Pages, Vercel, Render, Cloudflare Workers, Custom Domains &amp; DNS</p>
+    <p><b>AI:</b> Gemini API, OpenAI API, Web Speech API (voice), AI chat and voice assistants</p>
+    <p><b>Process:</b> Testing &amp; QA, Debugging, Agile/Scrum, UX Principles, Technical Documentation</p>
+
+    <h2>Projects</h2>
+    <div class="r-row">Khanu Learning — AI-Assisted Tutoring &amp; Booking (Capstone) <span>React · Express · MongoDB · Gemini · Render</span></div>
+    <ul>
+      <li>Built a full-stack app connecting a React/Vite front end, an Express REST API and MongoDB/Mongoose models for users, services and bookings.</li>
+      <li>Secured accounts with password hashing, JWT authentication and ownership checks on booking and cancellation.</li>
+      <li>Ranked tutoring sessions by goal, subject, level and budget, with Google Gemini explaining the top match and a labeled fallback when the AI is unavailable.</li>
+      <li>Wrote 15 passing automated tests; deployed on Render with an additional GitHub Pages front end.</li>
+    </ul>
+    <div class="r-row">WorldWave — Live Radio Worldwide <span>React · REST API · Vercel</span></div>
+    <ul><li>Built a radio browser in vanilla JavaScript, then rebuilt it in React; integrated the Radio Browser API to stream live stations by country.</li></ul>
+    <div class="r-row">My Free AI — Voice &amp; Chat Assistant <span>JavaScript · Gemini API · Vercel</span></div>
+    <ul><li>Built a zero-cost voice and chat assistant using the Gemini API and the browser's built-in speech APIs.</li></ul>
+    <div class="r-row">My AI — Voice Assistant <span>OpenAI API · Render · Cloudflare</span></div>
+    <ul><li>Deployed an OpenAI-powered voice assistant with a back end on Render behind Cloudflare at aihelpall.com.</li></ul>
+    <div class="r-row">Student Management System <span>JavaScript · GitHub Pages</span></div>
+    <ul><li>Built a student records app with an add-student form, a searchable directory and a course filter.</li></ul>
+    <div class="r-row">I Remember — Memory Journal App <span>JavaScript · Vercel</span></div>
+    <ul><li>Built and deployed a personal memory-journal web app with a custom domain (i-remembe.app).</li></ul>
+    <div class="r-row">New Prime General Construction — Company Website <span>React · Vite · Motion · Vercel</span></div>
+    <ul><li>Built a motion-driven, responsive site with React Router, service pages, a project portfolio, a six-step process and an estimate request form.</li></ul>
+
+    <h2>Experience</h2>
+    <div class="r-row">Junior Software Engineer — Full-Stack Projects <span>July 2026 – Present</span></div>
+    <div class="r-sub">Hofstra University / QuickStart Software Engineering Program · Independent Projects</div>
+    <ul>
+      <li>Design, build and deploy responsive web apps with HTML, CSS, JavaScript and React; 20 projects live.</li>
+      <li>Build REST APIs with Node.js and Express on MongoDB, secured with bcrypt, JWT authentication and ownership checks.</li>
+      <li>Integrate third-party APIs and AI/voice features (Gemini, OpenAI, Web Speech API) with async/await, retries and fallbacks.</li>
+      <li>Deploy with Git/GitHub to Vercel, Render, GitHub Pages and Cloudflare Workers; manage custom domains and DNS.</li>
+      <li>Debug front-end and back-end issues, write automated tests (15 for Khanu) and document features and limitations.</li>
+    </ul>
+    <div class="r-row">Project Manager — New Prime Construction Corporation <span>June 2001 – Present</span></div>
+    <ul>
+      <li>Plan and coordinate construction projects from scope and estimating through execution, closeout and client handoff.</li>
+      <li>Build schedules, track milestones, coordinate subcontractors and trades, and resolve field issues before they affect delivery.</li>
+      <li>Manage budgets, bids, material procurement and vendor relationships; maintain project documentation and code/safety compliance.</li>
+      <li>Designed and built the company's React website (Vite, React Router, Motion), deployed on Vercel at newprimeconstruction.com.</li>
+    </ul>
+    <div class="r-row">Seasonal Cement Mason — NYC Parks &amp; Recreation <span>2026</span></div>
+    <ul>
+      <li>Place, finish and repair concrete for sidewalks, pavements, foundations and retaining walls to specified grade and contour.</li>
+      <li>Estimate job needs, prepare material requisitions and maintain work records; coordinate with crews and supervisors.</li>
+    </ul>
+    <div class="r-row">Night Supervisor — Mosholu Montefiore Community Center <span>June 2024 – January 2025</span></div>
+    <ul><li>Supervised evening operations, staff coverage, scheduling, building security and incident handoffs.</li></ul>
+    <div class="r-row">Maintenance Worker — NYC Parks &amp; Recreation <span>2019 – 2026</span></div>
+    <ul><li>Performed facility maintenance and repairs; inspected conditions, responded to work orders and maintained service records.</li></ul>
+    <div class="r-row">Associate Park Service Worker / City Park Worker — NYC Parks &amp; Recreation <span>2016 – 2021</span></div>
+    <ul><li>Operated vehicles and field equipment; tracked work orders, timesheets and supplies; guided assigned crew members.</li></ul>
+    <div class="r-row">Assistant City Highway Repairer — NYC Department of Transportation <span>2017 – 2018</span></div>
+    <ul><li>Repaired curbs, sidewalks and roadway pavement; mixed and placed concrete and asphalt; maintained safe work zones.</li></ul>
+
+    <h2>Education &amp; Certifications</h2>
+    <div class="r-row">Software Engineering Program — Hofstra University / QuickStart <span>2026 – Present</span></div>
+    <div class="r-row">A.A.S., Electronic Engineering — Bronx Community College <span>Bronx, NY</span></div>
+    <p style="margin-top:6px"><b>QuickStart Certificates (2026):</b> JavaScript · React Foundations · Node.js, Express · REST API Integration · Introduction to Databases · Code Foundations: Software Principles, HTML &amp; CSS · Starting with Git &amp; GitHub · Testing &amp; Quality Assurance · Integrated Software Design &amp; UX Principles · Scrum and Agile Immersion · AI Prompting &amp; Developer Workflow</p>
+    <p><b>Other:</b> OSHA Safety Training · Valid NYS Driver's License</p>
+  </div>
+</div>
+
+<script>
+// ---------- DATA ----------
+const projects = [
+  {name:"Khanu Learning", desc:"Full-stack capstone: AI-ranked tutoring recommendations (Gemini), JWT login and session booking backed by MongoDB. 15 passing automated tests.", url:"https://khanu-learning.onrender.com/", label:"Live app", extra:[{label:"Source code", url:"https://github.com/gim1203-hue/khanu-learning"}], tags:["React","Express","MongoDB","Gemini API","Render"], cat:["react","ai","js"]},
+  {name:"WorldWave (React)", desc:"Pick a country and stream any live station from the Radio Browser API.", url:"https://worldwave-react-beta.vercel.app/", tags:["React","REST API","Vercel"], cat:["react","js"]},
+  {name:"My Free AI", desc:"Zero-cost voice + chat assistant: Gemini API for answers, the browser's speech APIs for voice.", url:"https://my-free-ai.vercel.app/", tags:["JavaScript","Gemini API","Vercel"], cat:["ai","js"]},
+  {name:"My AI", desc:"OpenAI-powered voice assistant with a back end on Render behind Cloudflare.", url:"https://aihelpall.com/", tags:["OpenAI API","Render","Cloudflare"], cat:["ai"]},
+  {name:"Student Management System", desc:"Student records app: add students with name, email, age and course, then search by name and filter by course.", url:"https://gim1203-hue.github.io/Student-Management-System/", tags:["JavaScript","DOM","Forms","GitHub Pages"], cat:["js"]},
+  {name:"I Remember", desc:"Personal memory-journal web app with its own custom domain.", url:"https://www.i-remembe.app/", tags:["JavaScript","Vercel"], cat:["js"]},
+  {name:"New Prime Construction", desc:"Motion-driven React website for a construction company: service pages, project portfolio, six-step process and estimate form.", url:"https://newprimeconstruction.com/", label:"Live site", extra:[{label:"Vercel build", url:"https://gim1203-hue-mrusmanupdate-tau.vercel.app/"}], tags:["React","Vite","Motion","Vercel"], cat:["business","react","js"]},
+  {name:"KhanTech", desc:"Site running directly on a Cloudflare Worker (serverless edge).", url:"https://khantech.khantech.workers.dev/", tags:["Cloudflare Workers","Serverless"], cat:["js"]},
+  {name:"My Radio (original WorldWave)", desc:"The first vanilla JavaScript version of the radio browser.", url:"https://gim1203-hue.github.io/my-radio/", tags:["JavaScript","DOM","GitHub Pages"], cat:["js"]},
+  {name:"My AI GIF", desc:"GIF search app using the Giphy API.", url:"https://gim1203-hue.github.io/my-ai-gif/", tags:["JavaScript","Giphy API"], cat:["js"]},
+  {name:"My Weather", desc:"Live worldwide weather lookup.", url:"https://gim1203-hue.github.io/my-weather/", tags:["JavaScript","Weather API"], cat:["js"]},
+  {name:"My Calendar", desc:"Monthly calendar app.", url:"https://gim1203-hue.github.io/my-calendar/", tags:["JavaScript","DOM"], cat:["js"]},
+  {name:"SkillSpring", desc:"Practical skills with clear learning paths.", url:"https://gim1203-hue.github.io/skill-spring/", tags:["HTML","CSS","JavaScript"], cat:["js"]},
+  {name:"CircleSpark", desc:"Demo community for positive interest circles.", url:"https://gim1203-hue.github.io/circle-spark/#/home", tags:["JavaScript","Routing"], cat:["js"]},
+  {name:"ReadyNeighbor", desc:"Household preparedness app with Google sign-in, a private checklist and an emergency plan saved to each account. Free server: first load can take up to a minute.", url:"https://ready-neighbor.onrender.com/", tags:["Google Sign-In","Render","Full-Stack"], cat:["js"]},
+  {name:"Pocket Pantry", desc:"Pantry and recipe-tracking AI app.", url:"https://pocketpantry.imran-4151.chatgpt.site/", tags:["AI App"], cat:["ai"]},
+  {name:"LaunchLane Planner", desc:"AI launch-planning app.", url:"https://launchlane-planner.imran-4151.chatgpt.site/", tags:["AI App"], cat:["ai"]},
+  {name:"LinkDeck · All of My Work", desc:"Central directory of my apps, tools and learning resources.", url:"https://www.allofmywork.com/", tags:["Directory","Web"], cat:["js"]},
+  {name:"MyAllHub", desc:"Personal all-in-one hub site.", url:"https://myallhub.com/", tags:["Web"], cat:["js"]},
+  {name:"ImranKhan.nyc", desc:"My earlier personal site, showing how my web skills progressed.", url:"https://imrankhan.nyc/", tags:["HTML","CSS"], cat:["js"]}
+];
+
+const certs = [
+  {t:"JavaScript", d:"Aug 25, 2026", h:15, n:"000000440682", img:"javascript"},
+  {t:"React Foundations", d:"Sep 28, 2026", h:8, n:"000000440684", img:"react"},
+  {t:"Node.js, Express", d:"Oct 13, 2026", h:6, n:"000000440686", img:"nodejs-express"},
+  {t:"REST API Integration", d:"Oct 20, 2026", h:6, n:"000000440687", img:"rest-api"},
+  {t:"Introduction to Databases", d:"Oct 2, 2026", h:6, n:"000000440685", img:"databases"},
+  {t:"Code Foundations: Software Principles, HTML & CSS", d:"Aug 12, 2026", h:13, n:"000000440681", img:"code-foundations"},
+  {t:"Starting with Git & GitHub", d:"Jul 30, 2026", h:4, n:"000000440680", img:"git-github"},
+  {t:"Testing & Quality Assurance", d:"Nov 3, 2026", h:3, n:"000000440690", img:"testing-qa"},
+  {t:"Integrated Software Design & UX Principles", d:"Nov 3, 2026", h:4, n:"000000440689", img:"software-design-ux"},
+  {t:"Scrum and Agile Immersion", d:"Nov 3, 2026", h:3, n:"000000440691", img:"scrum-agile"},
+  {t:"AI Prompting & Developer Workflow", d:"Jul 21, 2026", h:6, n:"000000440679", img:"ai-prompting"}
+];
+
+const jobs = [
+  {title:"Junior Software Engineer — Full-Stack Projects", org:"Hofstra University / QuickStart Software Engineering Program · Independent Projects", when:"July 2026 – Present", items:[
+    "Design, build and deploy responsive web apps with HTML, CSS, JavaScript and React; 20 projects live, including the Khanu Learning full-stack capstone.",
+    "Build back-end REST APIs with Node.js and Express, connected to MongoDB/Mongoose, with bcrypt password hashing, JWT authentication and ownership checks.",
+    "Integrate third-party REST APIs and AI/voice features (Google Gemini, OpenAI, Web Speech API) using fetch and async/await, with retries and fallbacks.",
+    "Manage code with Git, GitHub and VS Code; deploy to Vercel, Render, GitHub Pages and Cloudflare Workers; set up custom domains and DNS.",
+    "Build interactive features with DOM manipulation and React; test UI and features across devices; wrote 15 automated tests for Khanu.",
+    "Debug front-end and back-end issues, including deployment settings and AI-provider failures.",
+    "Document features, setup steps and known limitations in project READMEs for non-technical readers.",
+    "Completed 11 QuickStart certifications (74 hours) on schedule, including Scrum and Agile Immersion."]},
+  {title:"Project Manager", org:"New Prime Construction Corporation", when:"June 2001 – Present", items:[
+    "Plan and coordinate construction projects from scope definition and estimating through execution, closeout and client handoff.",
+    "Build schedules, track milestones, coordinate subcontractors and trades, and resolve field issues before they affect delivery.",
+    "Manage budgets, cost estimates, bids, change considerations, material procurement, equipment needs and vendor relationships.",
+    "Coordinate clients, field crews, suppliers and outside professionals; communicate progress, constraints and next actions.",
+    "Maintain project documentation and support quality, code, safety and site requirements.",
+    "Balance multiple priorities, resources and deadlines while staying accountable for project outcomes.",
+    "Designed and built the company's React website (Vite, React Router, Motion), deployed on Vercel at newprimeconstruction.com."]},
+  {title:"Seasonal Cement Mason", org:"NYC Parks & Recreation", when:"2026", items:[
+    "Prepare, mix, place, screed, float and finish cement and concrete to specified grade, contour and surface requirements.",
+    "Build, align and remove forms; place concrete for sidewalks, pavements, floors, foundations and retaining-wall work.",
+    "Repair deteriorated, cracked and spalled concrete; patch and restore public-facing infrastructure.",
+    "Estimate job needs and help prepare material requisitions; protect tools, equipment, work zones, coworkers and the public.",
+    "Maintain work records and reports; coordinate with crews and supervisors to keep job sites safe and orderly."]},
+  {title:"Night Supervisor", org:"Mosholu Montefiore Community Center / Child Development Center", when:"June 2024 – January 2025", items:[
+    "Supervised evening operations, staff coverage, scheduling, building security, cleanliness and safe facility use.",
+    "Coordinated on-site logistics and responded to operational issues to keep programs running smoothly.",
+    "Monitored completion of assigned duties and communicated needs, incidents and handoffs to the right staff."]},
+  {title:"Maintenance Worker", org:"NYC Parks & Recreation", when:"2019 – 2026", items:[
+    "Perform building and facility maintenance and repairs involving masonry, woodwork, flooring, walls, hardware and equipment.",
+    "Support minor electrical, plumbing and heating-system maintenance; inspect conditions and identify repair needs.",
+    "Maintain service records and reports; respond to assigned work orders and facility needs.",
+    "Support special events, seasonal operations and emergency maintenance."]},
+  {title:"City Park Worker (CPW)", org:"NYC Parks & Recreation", when:"2016 – 2021", items:[
+    "Maintained parks, playgrounds, grounds and facilities through cleaning, landscaping, snow removal and seasonal operations.",
+    "Performed minor masonry, plumbing, electrical, painting, carpentry and equipment repairs.",
+    "Drove agency vehicles, operated motorized equipment and performed safety checks on facilities and tools."]},
+  {title:"Associate Park Service Worker (APSW)", org:"NYC Parks & Recreation", when:"2017 – 2018", items:[
+    "Operated trucks, trailers and motorized field equipment; inspected and maintained tools, vehicles and equipment.",
+    "Performed construction, demolition, concrete work, and facility and landscape repair.",
+    "Tracked work orders, assignments, timesheets and supplies; guided assigned personnel and inspected work for quality.",
+    "Responded with crews to snowstorms, emergencies and citywide operational needs."]},
+  {title:"Assistant City Highway Repairer", org:"NYC Department of Transportation", when:"2017 – 2018", items:[
+    "Assisted with repair of curbs, sidewalks, roadway pavement, manhole edges and defective patches.",
+    "Mixed and placed concrete and asphalt; prepared defective areas for patching.",
+    "Operated portable and towed power equipment; supported vehicle inspections and maintenance.",
+    "Kept work zones safe, including directing traffic around active repairs."]}
+];
+
+// ---------- HELPERS ----------
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+// ---------- PROJECTS ----------
+const grid = document.getElementById("projGrid");
+grid.innerHTML = projects.map(p => `
+  <article class="card proj" data-cat="${p.cat.join(" ")}" data-text="${esc((p.name+" "+p.desc+" "+p.tags.join(" ")).toLowerCase())}">
+    <span class="kind">Live project</span>
+    <h3>${esc(p.name)}</h3>
+    <p>${esc(p.desc)}</p>
+    <div class="tags">${p.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
+    <div class="links"><a href="${p.url}" target="_blank" rel="noopener">${esc(p.label || "Open project")} ↗</a>${(p.extra||[]).map(x=>`<a href="${x.url}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>`).join("")}</div>
+  </article>`).join("");
+
+let filter = "all";
+const search = document.getElementById("projSearch");
+const countEl = document.getElementById("projCount");
+const emptyEl = document.getElementById("projEmpty");
+function applyFilter(){
+  const q = search.value.trim().toLowerCase();
+  let shown = 0;
+  grid.querySelectorAll(".proj").forEach(card => {
+    const okCat = filter === "all" || card.dataset.cat.split(" ").includes(filter);
+    const okText = !q || card.dataset.text.includes(q);
+    const show = okCat && okText;
+    card.style.display = show ? "" : "none";
+    if (show) shown++;
+  });
+  countEl.textContent = shown + " of " + projects.length + " projects";
+  emptyEl.style.display = shown ? "none" : "block";
+}
+document.querySelectorAll(".chip").forEach(chip => chip.addEventListener("click", () => {
+  document.querySelectorAll(".chip").forEach(c => c.classList.remove("on"));
+  chip.classList.add("on");
+  filter = chip.dataset.filter;
+  applyFilter();
+}));
+search.addEventListener("input", applyFilter);
+applyFilter();
+
+// ---------- CERTIFICATIONS ----------
+document.getElementById("certGrid").innerHTML = certs.map(c => `
+  <div class="card cert-card">
+    <button type="button" class="cert-img" data-img="certs/${c.img}.jpg" data-title="${esc(c.t)}" aria-label="Enlarge ${esc(c.t)} certificate">
+      <img src="certs/${c.img}.jpg" alt="QuickStart certificate of completion: ${esc(c.t)}, Muhammad Khan" loading="lazy" width="1056" height="820">
+    </button>
+    <div class="cert">
+      <div class="badge" aria-hidden="true">✓</div>
+      <div>
+        <h3>${esc(c.t)}</h3>
+        <p>QuickStart · ${esc(c.d)} · ${c.h} hours</p>
+        <div class="meta mono">Certificate #${esc(c.n)}</div>
+      </div>
+    </div>
+  </div>`).join("");
+
+// ---------- CERTIFICATE LIGHTBOX ----------
+const lb = document.getElementById("lightbox");
+const lbImg = document.getElementById("lbImg");
+const lbTitle = document.getElementById("lbTitle");
+document.querySelectorAll(".cert-img").forEach(btn => btn.addEventListener("click", () => {
+  lbImg.src = btn.dataset.img; lbImg.alt = btn.dataset.title + " certificate";
+  lbTitle.textContent = btn.dataset.title;
+  lb.classList.add("open"); document.body.style.overflow = "hidden";
+  document.getElementById("lbClose").focus();
+}));
+const closeLb = () => { lb.classList.remove("open"); document.body.style.overflow = ""; };
+document.getElementById("lbClose").addEventListener("click", closeLb);
+lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && lb.classList.contains("open")) closeLb(); });
+
+// ---------- EXPERIENCE ----------
+const jobList = document.getElementById("jobList");
+jobList.innerHTML = jobs.map((j,i) => `
+  <div class="job${i===0?" open":""}">
+    <button type="button" aria-expanded="${i===0}" aria-controls="job${i}">
+      <span><span class="title">${esc(j.title)}</span><br><span class="org">${esc(j.org)}</span></span>
+      <span style="display:flex;align-items:center;gap:12px"><span class="when">${esc(j.when)}</span><span class="chev" aria-hidden="true">▾</span></span>
+    </button>
+    <div class="body" id="job${i}"><ul>${j.items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+  </div>`).join("");
+function setJob(job, open){
+  job.classList.toggle("open", open);
+  job.querySelector("button").setAttribute("aria-expanded", open);
+}
+jobList.querySelectorAll(".job").forEach(job => job.querySelector("button").addEventListener("click", () => setJob(job, !job.classList.contains("open"))));
+document.getElementById("expandAll").addEventListener("click", () => jobList.querySelectorAll(".job").forEach(j => setJob(j, true)));
+document.getElementById("collapseAll").addEventListener("click", () => jobList.querySelectorAll(".job").forEach(j => setJob(j, false)));
+
+// ---------- MOBILE MENU ----------
+const menuBtn = document.getElementById("menuBtn");
+const navList = document.getElementById("navList");
+menuBtn.addEventListener("click", () => {
+  const open = navList.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", open);
+});
+navList.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+  navList.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded", "false");
+}));
+
+// ---------- ACTIVE NAV LINK ----------
+const navLinks = [...navList.querySelectorAll("a")];
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+  });
+}, {rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section[id]").forEach(s => observer.observe(s));
+
+// ---------- RESUME MODAL ----------
+const modal = document.getElementById("resumeModal");
+const openResume = () => { modal.classList.add("open"); document.body.style.overflow = "hidden"; document.getElementById("closeResume").focus(); };
+const closeResume = () => { modal.classList.remove("open"); document.body.style.overflow = ""; };
+document.getElementById("openResume").addEventListener("click", openResume);
+document.getElementById("closeResume").addEventListener("click", closeResume);
+document.getElementById("printResume").addEventListener("click", () => window.print());
+modal.addEventListener("click", e => { if (e.target === modal) closeResume(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && modal.classList.contains("open")) closeResume(); });
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

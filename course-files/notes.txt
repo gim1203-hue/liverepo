@@ -1,0 +1,191 @@
+This is a subfolder of the project below. Services belong to that project, not necessarily this subfolder.
+Folder: C:\Users\muham\OneDrive\Desktop\software engineering course\liverepo+profile\course-files
+
+WEBSITE AND CONNECTED SERVICES
+Checked: October 14, 2026
+Project: C:\Users\muham\OneDrive\Desktop\software engineering course\liverepo+profile
+Status: Static website entry and referenced scripts/styles present
+Verification: entry files and local script/style references checked; this is not a guarantee that every feature, login, payment, API or backend works.
+
+Open website: double-click "website view.cmd". Starts a read-only local preview and opens your default browser. Requires the existing Node.js installation. The preview stops after 8 hours.
+
+GITHUB AND REPOSITORIES
+GitHub configured as a Git remote (remote existence/access not checked):
+https://github.com/gim1203-hue/liverepo.git
+All configured Git remotes:
+https://github.com/gim1203-hue/liverepo.git
+GitHub references in project files (may be third-party libraries or outbound links):
+https://github.com/gim1203-hue — index.html
+https://github.com/ — index.html
+https://github.com/Sandpack — index.html
+https://github.com/features/actions — index.html
+https://github.com/expo/expo — index.html
+
+HOSTED WEBSITE / DOMAIN LINKS
+No explicit primary hosted URL verified.
+
+SERVICES REFERENCED / CONFIGURED
+These are local evidence, not proof of an active paid account or an active integration. References may be supporting resources or outbound links.
+Vercel — evidence: index.html
+Cloudflare — evidence: index.html
+GitHub Pages — evidence: index.html
+Firebase — evidence: index.html
+Supabase — evidence: index.html
+MongoDB — evidence: index.html
+PostgreSQL — evidence: index.html
+MySQL — evidence: index.html
+Hugging Face — evidence: index.html
+YouTube — evidence: index.html
+Unsplash — evidence: index.html
+Railway — evidence: index.html
+Sentry — evidence: index.html
+
+URLS / DOMAINS REFERENCED IN PROJECT
+Listed with source file. This includes API/CDN/hosting links and ordinary outbound references; it does not mean each domain hosts this website. URL queries and credentials are omitted.
+https://github.com/gim1203-hue — index.html
+https://gim1203-hue.github.io/my-radio/ — index.html, index.html
+https://www.allofmywork.com/ — index.html
+https://worldwave-react-beta.vercel.app/ — index.html
+https://my-free-ai.vercel.app/ — index.html
+https://aihelpall.com/ — index.html
+https://www.i-remembe.app/ — index.html
+https://gim1203-hue.github.io/i-remember/ — index.html
+https://khantech.khantech.workers.dev/ — index.html
+https://mira-private-companion.imran-4151.chatgpt.site/ — index.html
+http://myallhub.com/ — index.html
+https://gim1203-hue.github.io/liverepo/ — index.html, index.html
+https://gim1203-hue-mrusmanupdate-tau.vercel.app/ — index.html
+https://newprimeconstruction.com/ — index.html
+https://gim1203-hue.github.io/my-ai-gif/ — index.html
+https://gim1203-hue.github.io/my-weather/ — index.html
+https://gim1203-hue.github.io/my-calendar/ — index.html
+https://gim1203-hue.github.io/ready-neighbor/ — index.html
+https://gim1203-hue.github.io/skill-spring/ — index.html
+https://gim1203-hue.github.io/circle-spark/ — index.html
+https://pocketpantry.imran-4151.chatgpt.site/ — index.html
+https://launchlane-planner.imran-4151.chatgpt.site/ — index.html
+https://imrankhan.nyc/ — index.html
+https://app.toonbee.ai/projects — index.html
+http://localhost:5173/ — index.html
+https://github.com/ — index.html
+https://vercel.com/usman-f5ed — index.html
+https://dash.cloudflare.com/ — index.html
+https://dashboard.render.com/ — index.html
+https://ap.www.namecheap.com/ — index.html
+https://supabase.com/dashboard — index.html
+https://developers.giphy.com/dashboard/ — index.html
+https://hofstra.quickstart.com/my-dashboard/ — index.html, index.html
+https://www.themoviedb.org/login/username — index.html
+https://me.developers.google.com/ — index.html
+https://www.microsoft.com/en-us — index.html
+https://console.firebase.google.com/ — index.html
+https://app.netlify.com/ — index.html
+https://chat.openai.com/ — index.html
+https://claude.ai/ — index.html
+https://gemini.google.com/ — index.html
+https://copilot.microsoft.com/ — index.html
+https://www.perplexity.ai/ — index.html
+https://chat.deepseek.com/ — index.html
+https://poe.com/ — index.html
+https://huggingface.co/spaces — index.html
+https://designer.microsoft.com/ — index.html
+https://codeium.com/ — index.html
+https://platform.openai.com/home — index.html
+https://aistudio.google.com/ — index.html
+https://serpapi.com/ — index.html
+https://programmablesearchengine.google.com/ — index.html
+https://console.cloud.google.com/apis/library/customsearch.googleapis.com — index.html
+https://console.cloud.google.com/apis/credentials — index.html
+https://huggingface.co/ — index.html
+https://console.anthropic.com/ — index.html
+https://devdocs.io/html — index.html
+https://devdocs.io/javascript — index.html
+https://devdocs.io/css — index.html
+https://developer.mozilla.org/en-US — index.html
+https://pythontutor.com/ — index.html
+https://compat-table.github.io/compat-table/es6/ — index.html
+https://validator.w3.org/ — index.html
+https://htmlcheatsheet.com/ — index.html
+https://www.w3schools.com/ — index.html
+https://nodejs.org/en — index.html
+https://nodejs.org/en/download — index.html
+https://caniuse.com/ — index.html
+https://www.freecodecamp.org/ — index.html
+https://stackoverflow.com/ — index.html
+https://www.theodinproject.com/ — index.html
+https://cs50.harvard.edu/x/ — index.html
+https://leetcode.com/ — index.html
+https://www.frontendmentor.io/ — index.html
+https://exercism.org/ — index.html
+https://codesandbox.io/dashboard/recent — index.html
+https://codesandbox.io/docs/learn — index.html
+https://codesandbox.io/docs/sdk — index.html
+https://vscode.dev/ — index.html
+https://dillinger.io/ — index.html
+https://github.com/Sandpack — index.html
+https://codepen.io/zsolt555/pen/PoaEYpL — index.html
+https://codepen.io/zsolt555/pen/OJLajgG — index.html
+https://codepen.io/zsolt555/pen/orePqg — index.html
+https://www.tabnine.com/ — index.html
+https://www.eclipse.org/downloads — index.html
+https://adoptium.net/installation/archives — index.html
+https://replit.com/ — index.html
+https://www.postman.com/ — index.html
+https://insomnia.rest/ — index.html
+https://editor.swagger.io/ — index.html
+https://jsonplaceholder.typicode.com/ — index.html
+https://rapidapi.com/ — index.html
+https://github.com/features/actions — index.html
+https://gitlab.com/ — index.html
+https://circleci.com/ — index.html
+https://desktop.github.com/ — index.html
+https://www.mongodb.com/cloud/atlas — index.html
+https://neon.tech/ — index.html
+https://planetscale.com/ — index.html
+https://railway.app/ — index.html
+https://flutter.dev/ — index.html
+https://reactnative.dev/ — index.html
+https://expo.dev/ — index.html
+https://docs.expo.dev/ — index.html
+https://github.com/expo/expo — index.html
+https://expo.dev/services — index.html
+https://snack.expo.dev/ — index.html
+https://www.figma.com/ — index.html
+https://www.canva.com/ — index.html
+https://www.istockphoto.com/ — index.html
+https://app.diagrams.net/ — index.html
+https://unsplash.com/ — index.html
+https://coolors.co/ — index.html
+https://trello.com/ — index.html
+https://www.notion.so/ — index.html
+https://linear.app/ — index.html
+https://slack.com/ — index.html
+https://sentry.io/ — index.html
+https://uptimerobot.com/ — index.html
+https://pagespeed.web.dev/ — index.html
+https://logrocket.com/ — index.html
+https://grafana.com/ — index.html
+https://snyk.io/ — index.html
+https://roadmap.sh/frontend — index.html
+https://www.youtube.com/watch — index.html, index.html, index.html
+https://roadmap.sh/backend — index.html
+https://roadmap.sh/full-stack — index.html
+https://roadmap.sh/android — index.html
+https://roadmap.sh/devops — index.html, index.html
+https://roadmap.sh/qa — index.html
+https://roadmap.sh/data-engineer — index.html
+https://roadmap.sh/ai-engineer — index.html
+https://roadmap.sh/cyber-security — index.html
+
+LIMITS
+Checked existing readable text source, documentation, configuration, shortcuts and local Git configuration. Secrets are not included. Archived ZIPs, account dashboards, DNS ownership, service billing and unpublished account connections were not inspected. No files were installed, built, edited, moved or deleted in the project.
+
+WEBSITES / PROJECTS IN SUBFOLDERS
+doc2 — Static website entry and referenced scripts/styles present — website view.cmd — 
+doc3 — Static website entry and referenced scripts/styles present — website view.cmd — 
+doc4 — Static website entry and referenced scripts/styles present — website view.cmd — 
+doc5 — Static website entry and referenced scripts/styles present — website view.cmd — 
+doc6 — Static website entry and referenced scripts/styles present — website view.cmd — 
+doc7 — No complete static website verified — 
+doc8 — Static website entry and referenced scripts/styles present — website view.cmd — 
+doc9 — No complete static website verified — 

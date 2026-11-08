@@ -1,0 +1,41 @@
+This is a subfolder of the project below. Services belong to that project, not necessarily this subfolder.
+Folder: C:\Users\muham\OneDrive\Desktop\software engineering course\liverepo+profile\course-files\doc3\images
+
+WEBSITE AND CONNECTED SERVICES
+Checked: October 14, 2026
+Project: C:\Users\muham\OneDrive\Desktop\software engineering course\liverepo+profile\course-files\doc3
+Status: Static website entry and referenced scripts/styles present
+Verification: entry files and local script/style references checked; this is not a guarantee that every feature, login, payment, API or backend works.
+
+Open website: double-click "website view.cmd". Starts a read-only local preview and opens your default browser. Requires the existing Node.js installation. The preview stops after 8 hours.
+
+GITHUB AND REPOSITORIES
+GitHub remote: not found in this project. This does not prove it is absent from GitHub.
+GitHub references in project files (may be third-party libraries or outbound links):
+https://github.com/ — index1.html
+
+HOSTED WEBSITE / DOMAIN LINKS
+No explicit primary hosted URL verified.
+
+SERVICES REFERENCED / CONFIGURED
+These are local evidence, not proof of an active paid account or an active integration. References may be supporting resources or outbound links.
+No named external services detected in scanned text/configuration files.
+
+URLS / DOMAINS REFERENCED IN PROJECT
+Listed with source file. This includes API/CDN/hosting links and ordinary outbound references; it does not mean each domain hosts this website. URL queries and credentials are omitted.
+https://github.com/ — index1.html
+https://www.facebook.com/ — index1.html
+https://www.w3schools.com/html/html_intro.asp — index1.html, index1.html
+http://127.0.0.1:5501/index2.html — index1.html, index1.html, index1.html
+http://127.0.0.1:5501/index.html — index1.html
+https://validator.w3.org/nu/ — index1.html, index1.html
+https://dillinger.io/ — index1.html
+https://codesandbox.io/p/sandbox/fervent-fog-lzgpj4 — index1.html
+https://codesandbox.io/docs/sdk — index1.html
+https://htmlcheatsheet.com/ — index1.html
+https://devdocs.io/html/ — index1.html
+https://www.w3schools.com/html/tryit.asp — index1.html
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements — index1.html
+
+LIMITS
+Checked existing readable text source, documentation, configuration, shortcuts and local Git configuration. Secrets are not included. Archived ZIPs, account dashboards, DNS ownership, service billing and unpublished account connections were not inspected. No files were installed, built, edited, moved or deleted in the project.
