@@ -203,7 +203,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 /* RESUME MODAL */
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;z-index:80;overflow:auto;padding:30px 12px}
 .modal.open{display:block}
-.modal-bar{max-width:820px;margin:0 auto 10px;display:flex;justify-content:flex-end;gap:10px}
+.modal-bar{max-width:820px;margin:0 auto 10px;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px}
 .resume{max-width:820px;margin:0 auto;background:#fff;color:#111;padding:44px 48px;border-radius:6px;font-size:10.5pt;line-height:1.45}
 .resume h1{font-size:22pt;margin-bottom:2px}
 .resume .r-title{font-size:11.5pt;font-weight:600;color:#1e3a5f}
@@ -258,6 +258,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
       <div class="cta">
         <a class="btn primary" href="#projects">View Projects</a>
         <button class="btn" type="button" id="openResume">View Resume</button>
+        <a class="btn" href="resume/Muhammad_Imran_Khan_Resume.pdf" download>Download Resume (PDF) ↓</a>
         <a class="btn" href="https://github.com/gim1203-hue" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="btn" href="https://www.linkedin.com/in/gimrankhan/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
@@ -600,6 +601,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
     </div>
     <div class="cta">
       <a class="btn primary" href="mailto:gimrankhan1203@gmail.com">Email Me</a>
+      <a class="btn" href="resume/Muhammad_Imran_Khan_Resume.pdf" download>Resume (PDF) ↓</a>
+      <a class="btn" href="resume/Muhammad_Imran_Khan_Resume.docx" download>Resume (Word) ↓</a>
       <a class="btn" href="tel:+13478359983">Call 347-835-9983</a>
       <a class="btn" href="https://github.com/gim1203-hue" target="_blank" rel="noopener">GitHub ↗</a>
       <a class="btn" href="https://www.linkedin.com/in/gimrankhan/" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -620,7 +623,9 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 <!-- RESUME MODAL -->
 <div class="modal" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume">
   <div class="modal-bar">
-    <button class="btn primary" type="button" id="printResume">Print / Save PDF</button>
+    <a class="btn primary" href="resume/Muhammad_Imran_Khan_Resume.pdf" download>Download PDF ↓</a>
+    <a class="btn" href="resume/Muhammad_Imran_Khan_Resume.docx" download>Download Word ↓</a>
+    <button class="btn" type="button" id="printResume">Print</button>
     <button class="btn" type="button" id="closeResume">Close ✕</button>
   </div>
   <div class="resume">
